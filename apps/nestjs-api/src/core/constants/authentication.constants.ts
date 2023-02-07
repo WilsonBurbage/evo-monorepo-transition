@@ -1,0 +1,1 @@
+export const PASSWORD_HASH_SALT = '571429d8-ab50-467d-9b7d-b51e181533fc';
