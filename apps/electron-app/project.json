@@ -1,0 +1,50 @@
+{
+  "name": "electron-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/electron-app/src",
+  "projectType": "applicatimaon",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/apps/electron-app",
+        "main": "apps/electron-app/src/electron-init.ts",
+        "tsConfig": "apps/electron-app/tsconfig.app.json",
+        "external": "all"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "serve-electron-app"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "electron-app:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/electron-app/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/electron-app/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

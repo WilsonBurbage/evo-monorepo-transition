@@ -1,0 +1,41 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Start Angular",
+      "command": "nx serve angular-app",
+      "presentation": {
+        "group": "run"
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Start Electron",
+      "command": "nx serve electron-app",
+      "presentation": {
+        "group": "run"
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Start NestJs",
+      "command": "nx serve nestjs-api",
+      "presentation": {
+        "group": "run"
+      },
+      "problemMatcher": []
+    },
+
+    {
+      "label": "Start All",
+      "dependsOrder": "parallel",
+      "dependsOn": ["Start Angular", "Start Electron", "Start NestJs"],
+      "problemMatcher": []
+    }
+  ]
+}
