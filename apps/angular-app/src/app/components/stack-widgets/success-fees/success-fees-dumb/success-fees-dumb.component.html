@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.successFees
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="successFees"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.successFees"
+      (rowDoubleClicked)="onEditSuccessFeeClicked($event)"
+      (rowDeleteClicked)="onDeleteSuccessFeeClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewSuccessFeeClicked()">
+        Add a success fee
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

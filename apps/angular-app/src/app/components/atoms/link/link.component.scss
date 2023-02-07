@@ -1,0 +1,36 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  display: inline-block;
+
+  a {
+    display: inline-block;
+
+    color: var(--highlight-1);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--white-1);
+    }
+  }
+
+  &.alternative {
+    a {
+      color: var(--white-1);
+
+      &:hover {
+        color: var(--highlight-1);
+      }
+    }
+  }
+
+  &.stretch {
+    width: 100%;
+
+    a {
+      width: 100%;
+    }
+  }
+}

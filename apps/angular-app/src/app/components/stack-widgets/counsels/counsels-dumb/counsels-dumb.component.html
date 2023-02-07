@@ -1,0 +1,26 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.counsels
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="counsels"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.counsels"
+      (rowDoubleClicked)="onEditCounselClicked($event)"
+      (rowDeleteClicked)="onDeleteCounselClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewCounselClicked()">Add a counsel</app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

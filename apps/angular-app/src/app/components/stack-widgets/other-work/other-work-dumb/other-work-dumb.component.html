@@ -1,0 +1,52 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.otherWork
+      ]
+    }}
+  </h2>
+
+  <div class="container split">
+    <div class="split__item">
+      <h3>Attendances</h3>
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="attendancesTableConfig"
+          [tableItems]="attendances"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.attendances"
+          (rowDoubleClicked)="onEditAttendanceClicked($event)"
+          (rowDeleteClicked)="onDeleteAttendanceClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewAttendanceClicked()">
+            Add an attendance
+          </app-button>
+        </app-button-set>
+      </div>
+    </div>
+    <div class="split__item">
+      <h3>Disbursements</h3>
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="disbursementsTableConfig"
+          [tableItems]="disbursements"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.disbursements"
+          (rowDoubleClicked)="onEditDisbursementClicked($event)"
+          (rowDeleteClicked)="onDeleteDisbursementClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewDisbursementClicked()">
+            Add a disbursement
+          </app-button>
+        </app-button-set>
+      </div>
+    </div>
+  </div>
+</app-stack-widget-wrapper-smart>

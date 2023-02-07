@@ -1,0 +1,8 @@
+<app-documents-dumb
+  [documentsItems]="(documentsItems$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (newDocumentsItemClicked)="onNewDocumentsItemClicked()"
+  (editDocumentsItemClicked)="onEditDocumentsItemClicked($event)"
+  (deleteDocumentsItemClicked)="onDeleteDocumentsItemClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-documents-dumb>

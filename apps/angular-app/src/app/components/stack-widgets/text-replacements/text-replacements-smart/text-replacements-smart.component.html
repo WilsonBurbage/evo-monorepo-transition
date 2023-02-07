@@ -1,0 +1,7 @@
+<app-text-replacements-dumb
+  [textReplacements]="(textReplacements$ | async)!"
+  (newTextReplacementClicked)="onNewTextReplacementClicked()"
+  (editTextReplacementClicked)="onEditTextReplacementClicked($event)"
+  (deleteTextReplacementClicked)="onDeleteTextReplacementClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-text-replacements-dumb>

@@ -1,0 +1,16 @@
+<app-table-dumb
+  [tableConfig]="tableConfig"
+  [tableItems]="tableItems"
+  [contextMenuItems]="contextMenuItems"
+  [redrawVariables]="redrawVariables"
+  [sortable]="sortable"
+  [short]="short"
+  (rowClicked)="onRowClicked($event)"
+  (rowDoubleClicked)="onRowDoubleClicked($event)"
+  (rowKeyPressed)="onRowKeyPressed($event)"
+  (rowDeleteClicked)="onRowDeleteClicked($event)"
+  (cellClicked)="onCellClicked($event)"
+  (cellDoubleClicked)="onCellDoubleClicked($event)"
+  (contextMenuItemClicked)="onContextMenuItemClicked($event)"
+  (sortPositionsChanged)="onSortPositionsChanged($event)"
+></app-table-dumb>

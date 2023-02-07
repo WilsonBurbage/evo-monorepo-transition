@@ -1,0 +1,24 @@
+<app-stack-widget-wrapper-smart [closeable]="false">
+  <div class="container">
+    <h2>Confirm...</h2>
+
+    <p>{{ confirmMessage }}</p>
+  </div>
+
+  <div class="container">
+    <app-button-set [reversed]="true">
+      <app-button
+        [attitude]="enums.Attitude.negative"
+        (clicked)="onConfirmClicked()"
+      >
+        Confirm
+      </app-button>
+      <app-button
+        [secondary]="true"
+        (clicked)="onCancelClicked()"
+      >
+        Cancel
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

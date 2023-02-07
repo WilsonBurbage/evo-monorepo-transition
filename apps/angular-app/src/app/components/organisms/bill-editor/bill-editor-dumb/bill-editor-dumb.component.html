@@ -1,0 +1,317 @@
+<div class="header">
+  <app-header
+    [title]="billSetup.title"
+    [filePath]="filePath"
+    [evoFileHasChangedSinceSave]="evoFileHasChangedSinceSave"
+    [stackWidgets]="stackWidgets"
+    (settingsClicked)="onSettingsClicked()"
+  ></app-header>
+</div>
+
+<div class="stack padded--all">
+  <div
+    *ngIf="this | function : anySelectorsRequired : stackWidgets"
+    @slideVerticalAnimation
+    class="stack__selectors"
+  >
+    <div class="max-width max-width--3">
+      <app-content-box>
+        <div class="split split--bottom-aligned">
+          <div class="split__item">
+            <app-active-element-selector-smart
+              [partSelectorRequired]="
+                this | function : partSelectorRequired : stackWidgets
+              "
+              [feeEarnerSelectorRequired]="
+                this | function : feeEarnerSelectorRequired : stackWidgets
+              "
+            ></app-active-element-selector-smart>
+          </div>
+
+          <div
+            *ngIf="this | function : partQuickLinksRequired : stackWidgets"
+            class="split__item--shrink padded--left"
+          >
+            <app-part-quick-links-smart></app-part-quick-links-smart>
+          </div>
+        </div>
+      </app-content-box>
+    </div>
+  </div>
+
+  <div
+    *ngIf="this | function : anySelectorsRequired : stackWidgets"
+    @slideVerticalAnimation
+    class="stack__selectors__spacer"
+  ></div>
+
+  <div class="stack__widgets">
+    <div class="max-width max-width--3">
+      <div
+        *ngFor="
+          let stackWidget of stackWidgets;
+          trackBy: trackRelational;
+          let index = index
+        "
+        class="stack__widget"
+        [ngSwitch]="stackWidget.stackWidgetReference"
+        [@slideVerticalAnimation]
+        [@reduceAnimation]="index !== 0"
+      >
+        <app-content-box>
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.attendance">
+            <app-attendance-smart
+              [config]="stackWidget.config!"
+            ></app-attendance-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.attendances">
+            <app-attendances-smart
+              [config]="stackWidget.config!"
+            ></app-attendances-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.billSetup">
+            <app-bill-setup-smart
+              [config]="stackWidget.config!"
+            ></app-bill-setup-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.caseParty">
+            <app-case-party-smart
+              [config]="stackWidget.config!"
+            ></app-case-party-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.chronology">
+            <app-chronology-smart
+              [config]="stackWidget.config!"
+            ></app-chronology-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.chronologyStep"
+          >
+            <app-chronology-step-smart
+              [config]="stackWidget.config!"
+            ></app-chronology-step-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.confirm">
+            <app-confirm-smart
+              [config]="stackWidget.config!"
+            ></app-confirm-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.correspondenceCounter"
+          >
+            <app-correspondence-counter-smart
+              [config]="stackWidget.config!"
+            ></app-correspondence-counter-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.counsel">
+            <app-counsel-smart
+              [config]="stackWidget.config!"
+            ></app-counsel-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.counsels">
+            <app-counsels-smart
+              [config]="stackWidget.config!"
+            ></app-counsels-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.coverSheetDetails"
+          >
+            <app-cover-sheet-details-smart
+              [config]="stackWidget.config!"
+            ></app-cover-sheet-details-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.coverSheetItem"
+          >
+            <app-cover-sheet-item-smart
+              [config]="stackWidget.config!"
+            ></app-cover-sheet-item-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.coverSheets">
+            <app-cover-sheets-smart
+              [config]="stackWidget.config!"
+            ></app-cover-sheets-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.disbursement">
+            <app-disbursement-smart
+              [config]="stackWidget.config!"
+            ></app-disbursement-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.disbursements"
+          >
+            <app-disbursements-smart
+              [config]="stackWidget.config!"
+            ></app-disbursements-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.documents">
+            <app-documents-smart
+              [config]="stackWidget.config!"
+            ></app-documents-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.documentsItem"
+          >
+            <app-documents-item-smart
+              [config]="stackWidget.config!"
+            ></app-documents-item-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.enhancement">
+            <app-enhancement-smart
+              [config]="stackWidget.config!"
+            ></app-enhancement-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.enhancements">
+            <app-enhancements-smart
+              [config]="stackWidget.config!"
+            ></app-enhancements-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.export">
+            <app-export-smart [config]="stackWidget.config!"></app-export-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.feeEarner">
+            <app-fee-earner-smart
+              [config]="stackWidget.config!"
+            ></app-fee-earner-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.narrative">
+            <app-narrative-smart
+              [config]="stackWidget.config!"
+            ></app-narrative-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.otherDisbursements"
+          >
+            <app-disbursements-smart
+              [config]="stackWidget.config!"
+            ></app-disbursements-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.otherWork">
+            <app-other-work-smart
+              [config]="stackWidget.config!"
+            ></app-other-work-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.part">
+            <app-part-smart [config]="stackWidget.config!"></app-part-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.parties">
+            <app-parties-smart
+              [config]="stackWidget.config!"
+            ></app-parties-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.parts">
+            <app-parts-smart [config]="stackWidget.config!"></app-parts-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.party">
+            <app-party-smart [config]="stackWidget.config!"></app-party-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.rateGroup">
+            <app-rate-group-smart
+              [config]="stackWidget.config!"
+            ></app-rate-group-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.rate">
+            <app-rate-smart [config]="stackWidget.config!"></app-rate-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.rates">
+            <app-rates-smart [config]="stackWidget.config!"></app-rates-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.settings">
+            <app-settings-smart
+              [config]="stackWidget.config!"
+            ></app-settings-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.solicitor">
+            <app-solicitor-smart
+              [config]="stackWidget.config!"
+            ></app-solicitor-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.solicitorLookup"
+          >
+            <app-solicitor-lookup-smart
+              [config]="stackWidget.config!"
+            ></app-solicitor-lookup-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.successFee">
+            <app-success-fee-smart
+              [config]="stackWidget.config!"
+            ></app-success-fee-smart>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.StackWidgetReference.successFees">
+            <app-success-fees-smart
+              [config]="stackWidget.config!"
+            ></app-success-fees-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.textReplacement"
+          >
+            <app-text-replacement-smart
+              [config]="stackWidget.config!"
+            ></app-text-replacement-smart>
+          </ng-container>
+
+          <ng-container
+            *ngSwitchCase="enums.StackWidgetReference.textReplacements"
+          >
+            <app-text-replacements-smart
+              [config]="stackWidget.config!"
+            ></app-text-replacements-smart>
+          </ng-container>
+        </app-content-box>
+      </div>
+    </div>
+    <div
+      class="stack__widget"
+      [@reduceAnimation]="stackWidgets.length > 0"
+    >
+      <app-home-smart></app-home-smart>
+    </div>
+  </div>
+</div>
+
+<div class="preview-wrapper">
+  <div class="jump-to-links">
+    <app-jump-to-links-smart></app-jump-to-links-smart>
+  </div>
+
+  <div class="preview">
+    <app-preview-smart></app-preview-smart>
+  </div>
+</div>

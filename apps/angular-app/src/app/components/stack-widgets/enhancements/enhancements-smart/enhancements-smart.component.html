@@ -1,0 +1,7 @@
+<app-enhancements-dumb
+  [enhancements]="(enhancements$ | async)!"
+  (newEnhancementClicked)="onNewEnhancementClicked()"
+  (editEnhancementClicked)="onEditEnhancementClicked($event)"
+  (deleteEnhancementClicked)="onDeleteEnhancementClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-enhancements-dumb>

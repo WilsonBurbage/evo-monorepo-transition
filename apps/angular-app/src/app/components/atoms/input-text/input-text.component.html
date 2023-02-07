@@ -1,0 +1,25 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <ng-container [ngSwitch]="formSchemaItem.textInputConfig?.textInputType">
+      <ng-container *ngSwitchCase="undefined">
+        <input
+          #htmlTextInput
+          type="text"
+          [formControlName]="formSchemaItem.controlName"
+        />
+      </ng-container>
+      <ng-container *ngSwitchCase="enums.TextInputType.number">
+        <input
+          type="number"
+          [formControlName]="formSchemaItem.controlName"
+        />
+      </ng-container>
+      <ng-container *ngSwitchCase="enums.TextInputType.password">
+        <input
+          type="password"
+          [formControlName]="formSchemaItem.controlName"
+        />
+      </ng-container>
+    </ng-container>
+  </div>
+</ng-container>

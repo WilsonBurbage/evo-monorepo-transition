@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.documents
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="documentsItems"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.documentsItems"
+      (cellDoubleClicked)="onEditDocumentsItemClicked($event)"
+      (rowDeleteClicked)="onDeleteDocumentsItemClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewDocumentsItemClicked()">
+        Add a documents item
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

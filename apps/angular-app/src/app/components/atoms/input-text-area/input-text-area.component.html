@@ -1,0 +1,9 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <textarea
+      #htmlTextInput
+      rows="5"
+      [formControlName]="formSchemaItem.controlName"
+    ></textarea>
+  </div>
+</ng-container>

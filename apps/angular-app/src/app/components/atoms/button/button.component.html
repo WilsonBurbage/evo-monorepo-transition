@@ -1,0 +1,13 @@
+<button
+  [disabled]="disabled || loading"
+  (click)="onClicked()"
+>
+  <app-icon
+    *ngIf="icon"
+    class="icon"
+    [icon]="icon"
+    [size]="size"
+  ></app-icon>
+  <span><ng-content></ng-content></span>
+  <app-throbber></app-throbber>
+</button>

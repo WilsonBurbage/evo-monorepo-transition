@@ -1,0 +1,29 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.chronology
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="chronologySteps"
+      [redrawVariables]="[attendances, disbursements, successFees]"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.chronologySteps"
+      (cellDoubleClicked)="onEditChronologyStepClicked($event)"
+      (rowDeleteClicked)="onDeleteChronologyStepClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewChronologyStepClicked()">
+        Add a chronology step
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

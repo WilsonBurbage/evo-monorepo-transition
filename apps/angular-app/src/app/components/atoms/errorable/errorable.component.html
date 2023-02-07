@@ -1,0 +1,16 @@
+<ng-container *ngIf="error; else contentTemplate">
+  <div class="container container--centered padded--all">
+    <div class="container">
+      <app-icon
+        [icon]="enums.FontAwesomeIcon.triangleExclamation"
+        [size]="enums.FontAwesomeSize.four"
+      ></app-icon>
+    </div>
+    <h2>Ooooops!</h2>
+    <p>{{ message }}</p>
+  </div>
+</ng-container>
+
+<ng-template #contentTemplate>
+  <ng-content></ng-content>
+</ng-template>

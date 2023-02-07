@@ -1,0 +1,139 @@
+@import 'mixins/box';
+@import 'mixins/gradients';
+@import 'mixins/animation';
+
+:host {
+  @include component-reset;
+
+  display: inline-block;
+
+  text-align: center;
+
+  button {
+    padding: var(--box-size-2) var(--box-size-5);
+    width: 100%;
+
+    border: 1px solid var(--black);
+    border-radius: var(--border-radius-size);
+    color: var(--offset-for-highlight-1);
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    @include highlight-gradient-1;
+    @include shadow--shallow;
+
+    span {
+      @include micro-animated;
+    }
+
+    &:hover {
+      background-color: var(--highlight-2);
+    }
+
+    &[disabled] {
+      span {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  ::ng-deep {
+    app-throbber {
+      @include micro-animated;
+    }
+  }
+
+  &.has-icon {
+    button {
+      span {
+        &:not(:empty) {
+          margin-left: var(--box-size-2);
+        }
+      }
+    }
+  }
+
+  &.positive {
+    button {
+      background: none;
+      background-color: var(--positive);
+    }
+  }
+
+  &.neutral {
+    button {
+      background: none;
+      background-color: var(--neutral);
+    }
+  }
+
+  &.negative {
+    button {
+      background: none;
+      background-color: var(--negative);
+    }
+  }
+
+  &.compact {
+    button {
+      padding: var(--box-size-1) var(--box-size-2);
+    }
+  }
+
+  &.half-height {
+    button {
+      padding-top: var(--box-size-1);
+      padding-bottom: var(--box-size-1);
+    }
+  }
+
+  &.double-height {
+    button {
+      padding-top: var(--box-size-3);
+      padding-bottom: var(--box-size-3);
+    }
+  }
+
+  &.secondary {
+    button {
+      color: var(--white-2);
+      @include grey-gradient-1;
+    }
+  }
+
+  &.tertiary {
+    button {
+      padding: var(--box-size-2);
+
+      color: var(--white-2);
+      background-color: transparent;
+      background: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  &.loading {
+    span {
+      margin-right: var(--box-size-1);
+    }
+  }
+
+  &.stretch {
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+
+  &:not(.loading) {
+    ::ng-deep {
+      app-throbber {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}

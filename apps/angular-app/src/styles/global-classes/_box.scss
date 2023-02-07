@@ -1,0 +1,147 @@
+@import 'mixins/box';
+
+.container {
+  @include vertically-spaced;
+
+  &--centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--vertically-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+  }
+
+  &--half-vertically-spaced {
+    @include half-vertically-spaced;
+  }
+}
+
+.max-width {
+  margin-left: auto;
+  margin-right: auto;
+
+  &--1 {
+    max-width: var(--box-max-width-1);
+  }
+
+  &--2 {
+    max-width: var(--box-max-width-2);
+  }
+
+  &--3 {
+    max-width: var(--box-max-width-3);
+  }
+
+  &--4 {
+    max-width: var(--box-max-width-4);
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--grey-1);
+}
+
+.padded {
+  box-sizing: border-box;
+
+  &--top {
+    padding-top: var(--spacer-size);
+  }
+
+  &--right {
+    padding-right: var(--spacer-size);
+  }
+  &--bottom {
+    padding-bottom: var(--spacer-size);
+  }
+
+  &--left {
+    padding-left: var(--spacer-size);
+  }
+
+  &--v {
+    padding-top: var(--spacer-size);
+    padding-bottom: var(--spacer-size);
+  }
+
+  &--h {
+    padding-right: var(--spacer-size);
+    padding-left: var(--spacer-size);
+  }
+
+  &--all {
+    padding-top: var(--spacer-size);
+    padding-right: var(--spacer-size);
+    padding-bottom: var(--spacer-size);
+    padding-left: var(--spacer-size);
+  }
+
+  &--all-but-top {
+    padding-right: var(--spacer-size);
+    padding-bottom: var(--spacer-size);
+    padding-left: var(--spacer-size);
+  }
+
+  &--all-but-bottom {
+    padding-top: var(--spacer-size);
+    padding-right: var(--spacer-size);
+    padding-left: var(--spacer-size);
+  }
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  &--vertically-centered {
+    align-items: center;
+  }
+
+  &--bottom-aligned {
+    align-items: flex-end;
+  }
+
+  &__item {
+    flex-grow: 1;
+    margin-left: var(--spacer-size);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--shrink {
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+
+    &--right-aligned {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  height: var(--scrollbar-size);
+  width: var(--scrollbar-size);
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white-1);
+  border-radius: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--black);
+}

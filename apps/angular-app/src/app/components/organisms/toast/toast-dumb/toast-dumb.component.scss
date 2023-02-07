@@ -1,0 +1,11 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  @include on-top(1);
+
+  position: fixed;
+  right: var(--box-size-3);
+  bottom: var(--box-size-3);
+}

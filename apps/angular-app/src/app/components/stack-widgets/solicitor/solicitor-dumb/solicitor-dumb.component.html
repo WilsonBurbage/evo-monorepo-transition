@@ -1,0 +1,32 @@
+<ng-container *ngIf="solicitor">
+  <app-stack-widget-wrapper-smart [closeable]="false">
+    <div class="split">
+      <div class="split__item">
+        <h2>
+          {{
+            constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+              enums.StackWidgetReference.solicitor
+            ]
+          }}
+        </h2>
+      </div>
+      <div class="split__item split__item--shrink">
+        <app-button
+          [icon]="enums.FontAwesomeIcon.magnifyingGlass"
+          [size]="enums.FontAwesomeSize.one"
+          [compact]="true"
+          (clicked)="onSearchClicked()"
+        ></app-button>
+      </div>
+    </div>
+
+    <div class="container">
+      <app-form
+        [schema]="solicitorSchema"
+        (formGroupGenerated)="onFormGroupGenerated($event)"
+        (submitClicked)="onSaveClicked()"
+        (cancelClicked)="onCancelClicked()"
+      ></app-form>
+    </div>
+  </app-stack-widget-wrapper-smart>
+</ng-container>

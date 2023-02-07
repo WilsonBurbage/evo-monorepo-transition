@@ -1,0 +1,7 @@
+<app-attendance-dumb
+  [attendance]="(attendance$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  [enhancements]="(enhancements$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-attendance-dumb>

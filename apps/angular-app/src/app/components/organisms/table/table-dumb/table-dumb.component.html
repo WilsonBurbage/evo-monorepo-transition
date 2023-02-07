@@ -1,0 +1,137 @@
+<app-context-menu
+  *ngIf="contextMenuItems"
+  [id]="componentId"
+  [contextMenuItems]="contextMenuItems"
+  [parentMousePosition]="mousePosition"
+  (itemClicked)="onContextMenuItemClicked($event)"
+></app-context-menu>
+
+<ng-container *ngIf="tableConfig">
+  <div
+    *ngVar="
+      this | function : getCombinedColumns : tableConfig as combinedColumns
+    "
+  >
+    <div class="table-wrapper">
+      <table
+        #htmlTable
+        [cellPadding]="0"
+        [cellSpacing]="0"
+      >
+        <thead>
+          <th
+            *ngFor="let column of combinedColumns"
+            [class.alignment-left]="column.alignment === enums.Alignment.left"
+            [class.alignment-centre]="
+              column.alignment === enums.Alignment.centre
+            "
+            [class.alignment-right]="column.alignment === enums.Alignment.right"
+            [style.width]="column.fixedWidth || null"
+          >
+            {{ column.title }}
+          </th>
+        </thead>
+        <tbody
+          cdkDropList
+          [cdkDropListDisabled]="!sortable"
+          (cdkDropListDropped)="onRowDropped($event)"
+        >
+          <tr
+            *ngFor="
+              let tableDataItem of tableConfig
+                | tableData : tableItems : redrawVariables;
+              trackBy: trackRelational;
+              let rowIndex = index
+            "
+            cdkDrag
+            tabindex="0"
+            [class.selected]="rowIndex === selectedIndex"
+            (click)="onRowClicked($event, rowIndex, tableItems[rowIndex])"
+            (dblclick)="
+              onRowDoubleClicked($event, rowIndex, tableItems[rowIndex])
+            "
+            (contextmenu)="onContextMenuClicked(rowIndex)"
+            (keypress)="onRowKeyPressed($event, rowIndex, tableItems[rowIndex])"
+          >
+            <td
+              *ngFor="
+                let columnValue of tableDataItem.columnValues;
+                let columnIndex = index
+              "
+              [class.alignment-left]="
+                !combinedColumns[columnIndex].alignment ||
+                combinedColumns[columnIndex].alignment === enums.Alignment.left
+              "
+              [class.alignment-centre]="
+                combinedColumns[columnIndex].alignment ===
+                enums.Alignment.centre
+              "
+              [class.alignment-right]="
+                combinedColumns[columnIndex].alignment === enums.Alignment.right
+              "
+              (click)="
+                onCellClicked(
+                  $event,
+                  combinedColumns[columnIndex],
+                  tableItems[rowIndex]
+                )
+              "
+              (dblclick)="
+                onCellDoubleClicked(
+                  $event,
+                  combinedColumns[columnIndex],
+                  tableItems[rowIndex]
+                )
+              "
+            >
+              <ng-container *ngIf="columnValue">
+                <ng-container
+                  *ngIf="!methods.isArray(columnValue); else isArrayTemplate"
+                >
+                  {{ columnValue }}
+                </ng-container>
+                <ng-template #isArrayTemplate>
+                  <div
+                    *ngFor="
+                      let item of columnValue;
+                      let columnValueIndex = index
+                    "
+                    class="container container--half-vertically-spaced"
+                  >
+                    {{ item }}
+                  </div>
+                </ng-template>
+              </ng-container>
+            </td>
+
+            <ng-container
+              *ngFor="let column of combinedColumns; let columnIndex = index"
+            >
+              <ng-container *ngIf="combinedColumns[columnIndex].buttonColumnId">
+                <td class="shrink">
+                  <app-button
+                    [icon]="
+                      this
+                        | function
+                          : getIconForButtonColumnId
+                          : combinedColumns[columnIndex].buttonColumnId
+                    "
+                    [size]="enums.FontAwesomeSize.one"
+                    [compact]="true"
+                    [tertiary]="true"
+                    (click)="
+                      onRowButtonClicked(
+                        combinedColumns[columnIndex].buttonColumnId,
+                        tableItems[rowIndex]
+                      )
+                    "
+                  ></app-button>
+                </td>
+              </ng-container>
+            </ng-container>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>

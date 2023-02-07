@@ -1,0 +1,7 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  min-height: 100vh;
+}

@@ -1,0 +1,10 @@
+<div
+  *ngFor="let toastMessage of toastMessages"
+  @slideVerticalAnimation
+  class="container"
+>
+  <app-call-out
+    [callOutText]="toastMessage.text"
+    [attitide]="toastMessage.attitude"
+  ></app-call-out>
+</div>

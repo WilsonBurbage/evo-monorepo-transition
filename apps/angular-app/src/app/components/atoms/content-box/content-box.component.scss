@@ -1,0 +1,39 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+  @include panel-reset;
+
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: stretch;
+
+  background-color: var(--grey-2);
+  border: 1px solid var(--grey-3);
+
+  .box-title {
+    position: relative;
+    width: 40px;
+    border: 1px none var(--grey-3);
+    border-right-style: solid;
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+  }
+
+  .content {
+    flex-grow: 1;
+    padding: var(--box-size-4);
+  }
+
+  &.inset {
+    box-shadow: none;
+
+    @include shadow--inner;
+  }
+}

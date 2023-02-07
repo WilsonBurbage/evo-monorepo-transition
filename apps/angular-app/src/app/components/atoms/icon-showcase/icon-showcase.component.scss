@@ -1,0 +1,17 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  .item {
+    display: inline-block;
+    margin: 30px;
+
+    text-align: center;
+
+    .name {
+      font-size: 10px;
+      margin-top: 5px;
+    }
+  }
+}

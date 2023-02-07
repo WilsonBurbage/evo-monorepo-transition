@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'variables/all';
+@import 'global-classes/all';
+
+html,
+body {
+  background-color: var(--black);
+  background-image: var(--page-background-url);
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+  text-rendering: optimizeLegibility;
+
+  color: var(--white-1);
+}

@@ -1,0 +1,5 @@
+<app-correspondence-counter-dumb
+  [correspondenceCounter]="(correspondenceCounter$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-correspondence-counter-dumb>

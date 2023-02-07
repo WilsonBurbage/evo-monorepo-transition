@@ -1,0 +1,22 @@
+<ng-container *ngIf="export">
+  <app-stack-widget-wrapper-smart [closeable]="false">
+    <h2>
+      {{
+        constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+          enums.StackWidgetReference.export
+        ]
+      }}
+    </h2>
+
+    <div class="container">
+      <app-form
+        submitText="Export"
+        [schema]="exportSchema"
+        (formGroupGenerated)="onFormGroupGenerated($event)"
+        (schemaButtonClicked)="onSchemaButtonClicked($event)"
+        (submitClicked)="onExportClicked()"
+        (cancelClicked)="onCancelClicked()"
+      ></app-form>
+    </div>
+  </app-stack-widget-wrapper-smart>
+</ng-container>

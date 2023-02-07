@@ -1,0 +1,11 @@
+<div
+  *ngFor="let iconKey of allIconKeys"
+  class="item"
+>
+  <fa-icon
+    [icon]="FONT_AWESOME_MAP[iconKey]"
+    [size]="enums.FontAwesomeSize.three"
+  ></fa-icon>
+
+  <div class="name">{{ iconKey }}</div>
+</div>

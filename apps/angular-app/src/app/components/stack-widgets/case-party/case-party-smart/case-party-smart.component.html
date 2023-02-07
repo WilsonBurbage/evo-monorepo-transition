@@ -1,0 +1,5 @@
+<app-case-party-dumb
+  [caseParty]="(caseParty$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-case-party-dumb>

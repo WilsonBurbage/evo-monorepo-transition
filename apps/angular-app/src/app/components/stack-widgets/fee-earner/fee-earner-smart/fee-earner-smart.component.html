@@ -1,0 +1,6 @@
+<app-fee-earner-dumb
+  [feeEarner]="(feeEarner$ | async)!"
+  [rateGroups]="(rateGroups$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-fee-earner-dumb>

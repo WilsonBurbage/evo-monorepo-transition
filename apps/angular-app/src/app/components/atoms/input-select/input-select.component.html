@@ -1,0 +1,20 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <select [formControlName]="formSchemaItem.controlName">
+      <option
+        *ngIf="formSchemaItem.optionsConfig?.includeNoneOption"
+        value=""
+        [selected]="!form.value[formSchemaItem.controlName]"
+      >
+        None
+      </option>
+      <option
+        *ngFor="let option of formSchemaItem.optionsConfig?.options"
+        [value]="option.value"
+        [selected]="option.value === form.value[formSchemaItem.controlName]"
+      >
+        {{ option.text }}
+      </option>
+    </select>
+  </div>
+</ng-container>

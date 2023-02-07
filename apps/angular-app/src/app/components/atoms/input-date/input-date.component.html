@@ -1,0 +1,8 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <input
+      type="date"
+      [formControlName]="formSchemaItem.controlName"
+    />
+  </div>
+</ng-container>

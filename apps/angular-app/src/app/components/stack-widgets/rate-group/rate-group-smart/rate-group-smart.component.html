@@ -1,0 +1,5 @@
+<app-rate-group-dumb
+  [rateGroup]="(rateGroup$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-rate-group-dumb>

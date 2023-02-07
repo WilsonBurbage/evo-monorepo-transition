@@ -1,0 +1,13 @@
+<app-screen-block
+  *ngIf="!authenticated && checkingAuthenticationKey"
+></app-screen-block>
+
+<ng-container *ngIf="authenticated; else loginTemplate">
+  <app-bill-editor-smart></app-bill-editor-smart>
+</ng-container>
+
+<ng-template #loginTemplate>
+  <app-login-smart></app-login-smart>
+</ng-template>
+
+<app-toast-smart></app-toast-smart>

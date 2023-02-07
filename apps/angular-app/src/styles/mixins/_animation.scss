@@ -1,0 +1,10 @@
+$micro-animation-speed: 0.5s;
+
+@mixin hardware-accelerated {
+  transform: transale3d(0, 0, 0);
+}
+
+@mixin micro-animated {
+  transition-duration: $micro-animation-speed;
+  transition-property: all;
+}

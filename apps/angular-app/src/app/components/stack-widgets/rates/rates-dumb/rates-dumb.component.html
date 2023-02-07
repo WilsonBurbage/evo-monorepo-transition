@@ -1,0 +1,76 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.rates
+      ]
+    }}
+  </h2>
+
+  <div class="container split">
+    <div class="split__item">
+      <h3>Rate groups</h3>
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="rateGroupsTableConfig"
+          [tableItems]="rateGroups"
+          [contextMenuItems]="rateGroupsContextMenu"
+          [redrawVariables]="[rateGroups, feeEarners]"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.rateGroups"
+          (rowClicked)="onRateGroupRowClicked($event)"
+          (rowDoubleClicked)="onEditRateGroupClicked($event)"
+          (rowDeleteClicked)="onDeleteRateGroupClicked($event)"
+          (contextMenuItemClicked)="onRateGroupsContextMenuItemClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewRateGroupClicked()">
+            Add a rate group
+          </app-button>
+        </app-button-set>
+      </div>
+    </div>
+    <div class="split__item split__item--shrink">
+      <h3>Fee earners</h3>
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="feeEarnersTableConfig"
+          [tableItems]="feeEarners"
+          [redrawVariables]="[rates]"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.feeEarners"
+          (rowDoubleClicked)="onEditFeeEarnerClicked($event)"
+          (rowDeleteClicked)="onDeleteFeeEarnerClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewFeeEarnerClicked()">
+            Add a fee earner
+          </app-button>
+        </app-button-set>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="selectedRateGroup"
+    class="container"
+    [@slideVerticalAnimation]
+  >
+    <h3>Rates for {{ selectedRateGroup.reference }}</h3>
+    <div class="container">
+      <app-table-smart
+        [tableConfig]="ratesTableConfig"
+        [tableItems]="
+          this
+            | function : ratesForSelectedRateGroup : selectedRateGroup : rates
+        "
+        [short]="true"
+        (rowDoubleClicked)="onEditRateClicked($event)"
+      ></app-table-smart>
+    </div>
+  </div>
+</app-stack-widget-wrapper-smart>

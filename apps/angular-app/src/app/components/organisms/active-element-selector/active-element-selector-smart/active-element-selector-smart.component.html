@@ -1,0 +1,7 @@
+<app-active-element-selector-dumb
+  [partSelectorRequired]="partSelectorRequired"
+  [feeEarnerSelectorRequired]="feeEarnerSelectorRequired"
+  [parts]="(parts$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (formGroupGenerated)="onFormGroupGenerated($event)"
+></app-active-element-selector-dumb>

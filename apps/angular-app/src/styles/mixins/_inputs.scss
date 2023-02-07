@@ -1,0 +1,15 @@
+@mixin input-reset {
+  padding: var(--box-size-1) var(--box-size-2);
+  margin: 0;
+  width: 100%;
+
+  border: 1px solid var(--black);
+  border-radius: var(--border-radius-size);
+
+  @include shadow--inner;
+
+  &[disabled] {
+    background-color: transparent;
+    color: var(--grey-2);
+  }
+}

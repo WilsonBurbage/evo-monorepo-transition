@@ -1,0 +1,58 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  label {
+    .input-wrapper {
+      display: flex;
+      margin-top: var(--box-size-1);
+
+      .enabler {
+        display: block;
+        flex-shrink: 1;
+        margin-right: var(--box-size-2);
+      }
+
+      .input {
+        display: block;
+        flex-grow: 1;
+      }
+    }
+
+    &.labelled-to-side {
+      display: flex;
+
+      span {
+        margin-top: var(--box-size-1);
+        margin-right: var(--box-size-2);
+      }
+
+      .input-wrapper {
+        flex-grow: 1;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.submit-attempted {
+    ::ng-deep .ng-invalid {
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+
+  .validation-error {
+    color: var(--offset-for-negative);
+    background-color: var(--negative);
+
+    border-radius: var(--border-radius-size);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    .text {
+      display: block;
+      padding: var(--box-size-1);
+    }
+  }
+}

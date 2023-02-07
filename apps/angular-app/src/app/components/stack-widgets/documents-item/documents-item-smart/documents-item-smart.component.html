@@ -1,0 +1,6 @@
+<app-documents-item-dumb
+  [documentsItem]="(documentsItem$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-documents-item-dumb>

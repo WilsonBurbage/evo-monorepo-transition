@@ -1,0 +1,5 @@
+<app-part-dumb
+  [part]="(part$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-part-dumb>

@@ -1,0 +1,11 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  input {
+    transform: scale(1.5);
+
+    accent-color: var(--highlight-1);
+  }
+}

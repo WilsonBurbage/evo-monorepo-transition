@@ -1,0 +1,5 @@
+<app-counsel-dumb
+  [counsel]="(counsel$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-counsel-dumb>

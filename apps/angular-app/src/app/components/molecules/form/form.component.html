@@ -1,0 +1,62 @@
+<ng-container *ngIf="formSchema">
+  <div class="form">
+    <ng-container
+      *ngFor="let formSchemaSection of formSchema.formSchemaSections"
+    >
+      <div
+        *ngIf="
+          formSchemaSection.showIfMethod
+            ? formSchemaSection.showIfMethod()
+            : true
+        "
+        class="form__section"
+      >
+        <div
+          *ngFor="let formSchemaItem of formSchemaSection.formSchemaItems"
+          class="form__item"
+          [ngClass]="
+            'form__item--' +
+            (this | function : getCssClassForSection : formSchemaSection)
+          "
+        >
+          <app-form-field
+            [form]="form"
+            [formSchemaItem]="formSchemaItem"
+            [submitAttempted]="submitAttempted"
+            (schemaButtonClicked)="onSchemaButtonClicked($event)"
+          ></app-form-field>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div
+    *ngIf="callOutText"
+    @slideVerticalAnimation
+    class="container"
+  >
+    <app-call-out
+      [callOutText]="callOutText"
+      [attitide]="enums.Attitude.negative"
+    ></app-call-out>
+  </div>
+
+  <app-button-set [reversed]="true">
+    <ng-container *ngIf="submitClicked.observed">
+      <app-button
+        [loading]="submitting"
+        (clicked)="onSubmitClicked()"
+      >
+        {{ submitText }}
+      </app-button>
+    </ng-container>
+    <ng-container *ngIf="cancelClicked.observed">
+      <app-button
+        [secondary]="true"
+        (clicked)="onCancelClicked()"
+      >
+        Cancel
+      </app-button>
+    </ng-container>
+    <ng-content></ng-content>
+  </app-button-set>
+</ng-container>

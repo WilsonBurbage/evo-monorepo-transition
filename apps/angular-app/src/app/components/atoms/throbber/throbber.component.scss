@@ -1,0 +1,64 @@
+@import 'mixins/box';
+@import 'mixins/animation';
+
+$dot-size: 10px;
+$dot-spacing: 15px;
+
+:host {
+  @include component-reset;
+
+  display: inline-block;
+  position: relative;
+  width: $dot-spacing * 2 + $dot-size;
+  height: $dot-size;
+  overflow: hidden;
+
+  div {
+    position: absolute;
+    width: $dot-size;
+    height: $dot-size;
+
+    border-radius: 50%;
+    background: #fff;
+  }
+  div:nth-child(1) {
+    left: 0;
+    animation: dot-grow $micro-animation-speed infinite ease;
+  }
+  div:nth-child(2) {
+    left: 0;
+    animation: dot-slide $micro-animation-speed infinite ease;
+  }
+  div:nth-child(3) {
+    left: $dot-spacing;
+    animation: dot-slide $micro-animation-speed infinite ease;
+  }
+  div:nth-child(4) {
+    left: $dot-spacing * 2;
+    animation: dot-shrink $micro-animation-speed infinite ease;
+  }
+  @keyframes dot-grow {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes dot-slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate($dot-spacing, 0);
+    }
+  }
+  @keyframes dot-shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+}

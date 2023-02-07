@@ -1,0 +1,32 @@
+h1 {
+  @include vertically-spaced;
+
+  font-size: var(--font-size-h1);
+  line-height: var(--font-size-h1);
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  @include vertically-spaced;
+
+  font-size: var(--font-size-h2);
+  line-height: var(--font-size-h2);
+  font-weight: bold;
+}
+
+h3 {
+  @include vertically-spaced;
+
+  font-size: var(--font-size-h3);
+  line-height: var(--font-size-h3);
+  font-weight: bold;
+}
+
+p {
+  @include vertically-spaced;
+}
+
+.small {
+  font-size: var(--font-size-small);
+}

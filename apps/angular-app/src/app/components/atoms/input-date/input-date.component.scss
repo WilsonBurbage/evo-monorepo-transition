@@ -1,0 +1,13 @@
+@import 'mixins/box';
+@import 'mixins/inputs';
+
+:host {
+  @include component-reset;
+
+  input {
+    @include input-reset;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

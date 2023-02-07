@@ -1,0 +1,7 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  display: inline-block;
+}

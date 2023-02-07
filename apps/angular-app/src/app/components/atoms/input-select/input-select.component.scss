@@ -1,0 +1,13 @@
+@import 'mixins/box';
+@import 'mixins/inputs';
+
+:host {
+  @include component-reset;
+
+  select {
+    @include input-reset;
+
+    padding-top: calc(var(--box-size-1) / 2);
+    padding-bottom: calc(var(--box-size-1) / 2);
+  }
+}

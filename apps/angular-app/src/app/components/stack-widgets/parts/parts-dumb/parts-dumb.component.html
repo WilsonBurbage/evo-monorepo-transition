@@ -1,0 +1,27 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.parts
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="parts"
+      [redrawVariables]="[solicitors, enhancements]"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.parts"
+      (cellDoubleClicked)="onEditPartClicked($event)"
+      (rowDeleteClicked)="onDeletePartClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewPartClicked()">Add a part</app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

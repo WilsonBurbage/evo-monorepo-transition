@@ -1,0 +1,11 @@
+<app-parties-dumb
+  [parties]="(parties$ | async)!"
+  [attendances]="(attendances$ | async)!"
+  [correspondenceCounters]="(correspondenceCounters$ | async)!"
+  [disbursements]="(disbursements$ | async)!"
+  (newPartyClicked)="onNewPartyClicked()"
+  (editPartyClicked)="onEditPartyClicked($event)"
+  (deletePartyClicked)="onDeletePartyClicked($event)"
+  (correspondenceCounterChanged)="onCorrespondenceCounterChanged($event)"
+  (cancelled)="onCancelClicked()"
+></app-parties-dumb>

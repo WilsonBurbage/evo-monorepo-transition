@@ -1,0 +1,5 @@
+<app-chronology-step-dumb
+  [chronologyStep]="(chronologyStep$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-chronology-step-dumb>

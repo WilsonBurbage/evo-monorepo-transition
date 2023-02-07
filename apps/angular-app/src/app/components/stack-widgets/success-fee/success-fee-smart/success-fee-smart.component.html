@@ -1,0 +1,5 @@
+<app-success-fee-dumb
+  [successFee]="(successFee$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-success-fee-dumb>

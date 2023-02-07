@@ -1,0 +1,10 @@
+<app-chronology-dumb
+  [chronologySteps]="(chronologySteps$ | async)!"
+  [attendances]="(attendances$ | async)!"
+  [disbursements]="(disbursements$ | async)!"
+  [successFees]="(successFees$ | async)!"
+  (newChronologyStepClicked)="onNewChronologyStepClicked()"
+  (editChronologyStepClicked)="onEditChronologyStepClicked($event)"
+  (deleteChronologyStepClicked)="onDeleteChronologyStepClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-chronology-dumb>

@@ -1,0 +1,126 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  --preview-grid-line-colour: #999;
+
+  .paper {
+    min-height: 100vh;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--black);
+    background-color: var(--white);
+
+    @include shadow--deep;
+
+    &.padding-one {
+      padding: var(--box-size-4);
+    }
+
+    &.padding-two {
+      padding: var(--box-size-10);
+    }
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      user-select: none;
+
+      tr {
+        &:first-child {
+          td {
+            padding-top: var(--box-size-3);
+          }
+        }
+      }
+
+      td {
+        .cell-content {
+          padding: 0 var(--box-size-2) var(--box-size-5) var(--box-size-2);
+        }
+      }
+
+      thead {
+        td {
+          font-weight: bold;
+
+          .cell-content {
+            padding: var(--box-size-3);
+          }
+        }
+
+        &.empty {
+          .cell-content {
+            display: none;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            &.unspaced {
+              .cell-content {
+                padding-bottom: 0;
+              }
+            }
+
+            &.bold {
+              font-weight: bold;
+            }
+
+            &.italic {
+              font-style: italic;
+            }
+
+            &.underline {
+              text-decoration: underline;
+            }
+          }
+
+          &.jumped-to {
+            color: var(--highlight-1);
+          }
+
+          &.has-link {
+            cursor: pointer;
+
+            &:hover {
+              color: var(--highlight-1);
+            }
+          }
+        }
+      }
+    }
+
+    &.lined {
+      table,
+      td {
+        border-width: 1px;
+        border-color: var(--preview-grid-line-colour);
+      }
+
+      table {
+        border-right-style: solid;
+        border-bottom-style: solid;
+      }
+
+      td {
+        border-left-style: solid;
+
+        &.inset {
+          border-left-style: none;
+        }
+      }
+
+      thead {
+        td {
+          border-top-style: solid;
+          border-bottom-style: solid;
+        }
+      }
+    }
+  }
+}

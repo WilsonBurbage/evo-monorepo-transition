@@ -1,0 +1,12 @@
+<app-other-work-dumb
+  [attendances]="(attendances$ | async)!"
+  [disbursements]="(disbursements$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (newAttendanceClicked)="onNewAttendanceClicked()"
+  (editAttendanceClicked)="onEditAttendanceClicked($event)"
+  (deleteAttendanceClicked)="onDeleteAttendanceClicked($event)"
+  (newDisbursementClicked)="onNewDisbursementClicked()"
+  (editDisbursementClicked)="onEditDisbursementClicked($event)"
+  (deleteDisbursementClicked)="onDeleteDisbursementClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-other-work-dumb>

@@ -1,0 +1,15 @@
+@mixin background-gradient-1 {
+  background: linear-gradient(0deg, var(--grey-1) 0%, var(--grey-2) 100%);
+}
+
+@mixin highlight-gradient-1 {
+  background: linear-gradient(
+    0deg,
+    var(--highlight-2) 0%,
+    var(--highlight-1) 100%
+  );
+}
+
+@mixin grey-gradient-1 {
+  background: linear-gradient(0deg, var(--grey-1) 0%, var(--grey-2) 100%);
+}

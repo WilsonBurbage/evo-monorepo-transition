@@ -1,0 +1,9 @@
+<app-parts-dumb
+  [parts]="(parts$ | async)!"
+  [solicitors]="(solicitors$ | async)!"
+  [enhancements]="(enhancements$ | async)!"
+  (newPartClicked)="onNewPartClicked()"
+  (editPartClicked)="onEditPartClicked($event)"
+  (deletePartClicked)="onDeletePartClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-parts-dumb>

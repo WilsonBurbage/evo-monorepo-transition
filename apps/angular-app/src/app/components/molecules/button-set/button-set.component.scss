@@ -1,0 +1,33 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  @include vertically-spaced;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(0px - var(--box-size-1));
+
+  &.reversed {
+    flex-direction: row-reverse;
+  }
+
+  ::ng-deep {
+    app-button {
+      margin: var(--box-size-1);
+    }
+  }
+
+  &.stretch-contents {
+    ::ng-deep {
+      app-button {
+        flex: 1 1 0px;
+      }
+    }
+  }
+
+  &:empty {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'mixins/box';
+@import 'mixins/inputs';
+
+:host {
+  @include component-reset;
+
+  input {
+    @include input-reset;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .currency-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__prefix {
+      flex-shrink: 1;
+      padding: var(--box-size-1) var(--box-size-2);
+
+      border-radius: var(--border-radius-size);
+      background-color: var(--grey-1);
+    }
+
+    &__input {
+      flex-grow: 1;
+    }
+  }
+}

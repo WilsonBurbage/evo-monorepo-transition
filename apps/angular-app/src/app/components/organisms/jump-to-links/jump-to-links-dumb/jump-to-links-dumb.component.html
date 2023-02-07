@@ -1,0 +1,18 @@
+<div class="container">
+  <app-form
+    [schema]="previewDocumentSchema"
+    (formGroupGenerated)="onFormGroupGenerated($event)"
+  ></app-form>
+</div>
+
+<div class="container">
+  <ng-container *ngFor="let jumpToLink of jumpToLinks">
+    <a
+      href="#"
+      [class]="'level-' + jumpToLink.level"
+      (click)="onJumpToLinkClicked(jumpToLink)"
+    >
+      {{ jumpToLink.title }}
+    </a>
+  </ng-container>
+</div>

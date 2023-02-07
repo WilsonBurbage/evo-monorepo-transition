@@ -1,0 +1,10 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <input
+      type="checkbox"
+      [formControlName]="
+        formSchemaItem.enablerControlName || formSchemaItem.controlName
+      "
+    />
+  </div>
+</ng-container>

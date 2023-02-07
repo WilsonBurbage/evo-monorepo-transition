@@ -1,0 +1,9 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <input
+      type="text"
+      [formControlName]="formSchemaItem.controlName"
+      (blur)="onBlur($event)"
+    />
+  </div>
+</ng-container>

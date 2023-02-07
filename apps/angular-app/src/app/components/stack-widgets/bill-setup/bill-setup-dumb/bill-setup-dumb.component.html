@@ -1,0 +1,20 @@
+<ng-container *ngIf="billSetup">
+  <app-stack-widget-wrapper-smart [closeable]="false">
+    <h2>
+      {{
+        constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+          enums.StackWidgetReference.billSetup
+        ]
+      }}
+    </h2>
+
+    <div class="container">
+      <app-form
+        [schema]="billSetupSchema"
+        (formGroupGenerated)="onFormGroupGenerated($event)"
+        (submitClicked)="onSaveClicked()"
+        (cancelClicked)="onCancelClicked()"
+      ></app-form>
+    </div>
+  </app-stack-widget-wrapper-smart>
+</ng-container>

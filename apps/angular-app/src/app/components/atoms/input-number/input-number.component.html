@@ -1,0 +1,9 @@
+<ng-container *ngIf="formSchemaItem">
+  <div [formGroup]="form">
+    <input
+      type="number"
+      step="1"
+      [formControlName]="formSchemaItem.controlName"
+    />
+  </div>
+</ng-container>

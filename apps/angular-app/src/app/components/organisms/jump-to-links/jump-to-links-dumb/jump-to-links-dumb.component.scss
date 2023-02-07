@@ -1,0 +1,27 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  a {
+    display: block;
+    margin: var(--box-size-2);
+
+    color: var(--white);
+    text-decoration: none;
+
+    border-bottom: 1px dotted var(--grey-2);
+
+    &.level-1 {
+      margin-left: 0;
+    }
+
+    &.level-2 {
+      margin-left: var(--box-size-3);
+    }
+
+    &.level-3 {
+      margin-left: var(--box-size-6);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<app-rates-dumb
+  [rateGroups]="(rateGroups$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  [parts]="(parts$ | async)!"
+  [rates]="(rates$ | async)!"
+  [billSetup]="(billSetup$ | async)!"
+  (newRateGroupClicked)="onNewRateGroupClicked()"
+  (editRateGroupClicked)="onEditRateGroupClicked($event)"
+  (deleteRateGroupClicked)="onDeleteRateGroupClicked($event)"
+  (generateFeeEarnersForEmptyRateGroupsClicked)="
+    onGenerateFeeEarnersForEmptyRateGroupsClicked()
+  "
+  (newFeeEarnerClicked)="onNewFeeEarnerClicked()"
+  (editFeeEarnerClicked)="onEditFeeEarnerClicked($event)"
+  (deleteFeeEarnerClicked)="onDeleteFeeEarnerClicked($event)"
+  (editRateClicked)="onEditRateClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-rates-dumb>

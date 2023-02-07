@@ -1,0 +1,15 @@
+<div class="split">
+  <div class="split__item split__item--shrink label">{{ label }}:</div>
+  <div class="split__item">
+    <ng-container *ngIf="loading; else contentTemplate">
+      <div
+        class="shimmer"
+        [class]="'version-' + random"
+      ></div>
+    </ng-container>
+
+    <ng-template #contentTemplate>
+      <ng-content></ng-content>
+    </ng-template>
+  </div>
+</div>

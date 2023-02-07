@@ -1,0 +1,15 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  .outer {
+    background-color: #ffffff40;
+  }
+
+  .inner {
+    height: 1px;
+    width: 50%;
+    background-color: var(--white);
+  }
+}

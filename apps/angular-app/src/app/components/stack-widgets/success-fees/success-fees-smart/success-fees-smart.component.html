@@ -1,0 +1,7 @@
+<app-success-fees-dumb
+  [successFees]="(successFees$ | async)!"
+  (newSuccessFeeClicked)="onNewSuccessFeeClicked()"
+  (editSuccessFeeClicked)="onEditSuccessFeeClicked($event)"
+  (deleteSuccessFeeClicked)="onDeleteSuccessFeeClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-success-fees-dumb>

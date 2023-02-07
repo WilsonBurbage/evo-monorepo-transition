@@ -1,0 +1,42 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  .form {
+    &__section {
+      @include vertically-spaced;
+
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      margin-left: var(--box-size-2);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &--one {
+        width: 100%;
+      }
+
+      &--two {
+        width: 50%;
+      }
+
+      &--three {
+        width: 33.3%;
+      }
+
+      &--four {
+        width: 25%;
+      }
+
+      &--five {
+        width: 20%;
+      }
+    }
+  }
+}

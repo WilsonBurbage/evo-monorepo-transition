@@ -1,0 +1,6 @@
+<app-login-dumb
+  [isAuthenticating]="(isAuthenticating$ | async)!"
+  [hasAuthenticatingError]="(hasAuthenticatingError$ | async)!"
+  [errorCode]="(errorCode$ | async)!"
+  (loginClicked)="onLoginClicked($event)"
+></app-login-dumb>

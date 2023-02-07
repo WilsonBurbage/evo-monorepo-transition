@@ -1,0 +1,8 @@
+<app-attendances-dumb
+  [attendances]="(attendances$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (newAttendanceClicked)="onNewAttendanceClicked()"
+  (editAttendanceClicked)="onEditAttendanceClicked($event)"
+  (deleteAttendanceClicked)="onDeleteAttendanceClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-attendances-dumb>

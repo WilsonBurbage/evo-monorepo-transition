@@ -1,0 +1,34 @@
+@import 'mixins/box';
+@import 'mixins/animation';
+
+:host {
+  @include component-reset;
+
+  border: 1px dashed var(--grey-3);
+
+  .title-bar {
+    padding: var(--box-size-2);
+
+    background-color: var(--black);
+    cursor: pointer;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .toggle {
+    @include micro-animated;
+
+    transform: rotate(-135deg);
+  }
+
+  &.open .toggle {
+    transform: rotate(0deg);
+  }
+
+  .content {
+    padding: var(--spacer-size);
+    overflow: hidden;
+  }
+}

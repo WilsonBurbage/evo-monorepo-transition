@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.disbursements
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="disbursements"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.disbursements"
+      (rowDoubleClicked)="onEditDisbursementClicked($event)"
+      (rowDeleteClicked)="onDeleteDisbursementClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewDisbursementClicked()">
+        Add a disbursement
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

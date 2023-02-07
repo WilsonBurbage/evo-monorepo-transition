@@ -1,0 +1,8 @@
+<app-disbursements-dumb
+  [disbursements]="(disbursements$ | async)!"
+  [feeEarners]="(feeEarners$ | async)!"
+  (newDisbursementClicked)="onNewDisbursementClicked()"
+  (editDisbursementClicked)="onEditDisbursementClicked($event)"
+  (deleteDisbursementClicked)="onDeleteDisbursementClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-disbursements-dumb>

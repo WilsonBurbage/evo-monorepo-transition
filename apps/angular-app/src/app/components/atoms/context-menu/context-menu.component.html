@@ -1,0 +1,11 @@
+<ng-container *ngFor="let contextMenuItem of contextMenuItems">
+  <div class="item">
+    <app-link
+      [alternative]="true"
+      [stretch]="true"
+      (clicked)="onItemClicked(contextMenuItem)"
+    >
+      {{ contextMenuItem.title }}
+    </app-link>
+  </div>
+</ng-container>

@@ -1,0 +1,78 @@
+@import 'mixins/animation';
+@import 'mixins/box';
+@import 'mixins/gradients';
+
+:host {
+  @include component-reset;
+
+  .header {
+    position: sticky;
+    top: 0;
+
+    border-bottom: 1px solid var(--white-1);
+
+    @include shadow--deep;
+    @include background-gradient-1;
+    @include on-top(2);
+  }
+
+  .stack {
+    @include hardware-accelerated;
+
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    width: 100vw;
+    overflow-y: scroll;
+
+    background-color: var(--black);
+    border-bottom: 1px solid var(--white-1);
+
+    @include on-top(3);
+    @include shadow--deep;
+
+    &__selectors {
+    }
+
+    &__selectors__spacer {
+      height: 20px;
+    }
+
+    &__widgets {
+    }
+
+    &__widget {
+      transform-origin: top center;
+      overflow: hidden;
+    }
+  }
+
+  .preview-wrapper {
+    position: fixed;
+    left: 0;
+    top: var(--preview-top);
+    width: 100vw;
+    display: flex;
+
+    .jump-to-links {
+      width: 240px;
+      height: calc(100vh - var(--preview-top));
+      overflow-y: scroll;
+      padding: var(--box-size-3);
+
+      border-right: 1px solid var(--white-1);
+      background-color: var(--black);
+
+      @include on-top(4);
+    }
+
+    .preview {
+      flex-grow: 1;
+      height: calc(100vh - var(--preview-top));
+      overflow-y: scroll;
+      padding-top: var(--box-size-5);
+
+      @include on-top(5);
+    }
+  }
+}

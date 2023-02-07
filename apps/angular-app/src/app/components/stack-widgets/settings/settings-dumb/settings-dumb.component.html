@@ -1,0 +1,41 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.settings
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-errorable [error]="accountDetailsError">
+      <app-labelled-text
+        label="Username"
+        [loading]="accountDetailsWaitingForResponse"
+      >
+        {{ this | function : propertyValueFromEntity : account : 'username' }}
+      </app-labelled-text>
+
+      <app-labelled-text
+        label="Name"
+        [loading]="accountDetailsWaitingForResponse"
+      >
+        {{ this | function : propertyValueFromEntity : account : 'firstName' }}
+        {{ this | function : propertyValueFromEntity : account : 'surname' }}
+      </app-labelled-text>
+
+      <app-labelled-text
+        label="Organisation"
+        [loading]="accountDetailsWaitingForResponse"
+      >
+        {{ this | function : propertyValueFromEntity : organisation : 'name' }}
+      </app-labelled-text>
+    </app-errorable>
+  </div>
+
+  <app-button-set>
+    <app-button (clicked)="onTextReplacementsClicked()">
+      Text replacements
+    </app-button>
+  </app-button-set>
+</app-stack-widget-wrapper-smart>

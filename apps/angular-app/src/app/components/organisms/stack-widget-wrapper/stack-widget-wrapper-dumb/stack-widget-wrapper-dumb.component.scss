@@ -1,0 +1,13 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  position: relative;
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

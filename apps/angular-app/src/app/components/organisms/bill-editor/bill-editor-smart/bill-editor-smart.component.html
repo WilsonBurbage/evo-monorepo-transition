@@ -1,0 +1,7 @@
+<app-bill-editor-dumb
+  [filePath]="(filePath$ | async)!"
+  [evoFileHasChangedSinceSave]="(evoFileHasChangedSinceSave$ | async)!"
+  [billSetup]="(billSetup$ | async)!"
+  [stackWidgets]="(stackWidgets$ | async)!"
+  (settingsClicked)="onSettingsClicked()"
+></app-bill-editor-dumb>

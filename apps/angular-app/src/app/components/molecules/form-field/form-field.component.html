@@ -1,0 +1,106 @@
+<ng-container *ngIf="formSchemaItem">
+  <label [class.labelled-to-side]="formSchemaItem.labelledToSide">
+    <span>
+      <ng-container *ngIf="formSchemaItem.label; else noLabelTemplate">
+        {{ formSchemaItem.label
+        }}{{ (this | function : isRequired) ? '*' : '' }}:
+      </ng-container>
+      <ng-template #noLabelTemplate>&nbsp;</ng-template>
+    </span>
+    <div class="input-wrapper">
+      <div
+        *ngIf="formSchemaItem.enablerControlName"
+        class="enabler"
+      >
+        <app-input-checkbox
+          [form]="form"
+          [formSchemaItem]="formSchemaItem"
+        ></app-input-checkbox>
+      </div>
+
+      <div class="input">
+        <ng-container [ngSwitch]="formSchemaItem.type">
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.button">
+            <app-button
+              [halfHeight]="true"
+              (clicked)="onSchemaButtonClicked()"
+            >
+              {{ formSchemaItem.buttonConfig?.buttonLabel }}
+            </app-button>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.checkbox">
+            <app-input-checkbox
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-checkbox>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.currency">
+            <app-input-currency
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-currency>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.date">
+            <app-input-date
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-date>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.number">
+            <app-input-number
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-number>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.select">
+            <app-input-select
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-select>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.text">
+            <app-input-text
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-text>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.textArea">
+            <app-input-text-area
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-text-area>
+          </ng-container>
+
+          <ng-container *ngSwitchCase="enums.FormSchemaItemType.time">
+            <app-input-time
+              [form]="form"
+              [formSchemaItem]="formSchemaItem"
+            ></app-input-time>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+  </label>
+
+  <ng-container *ngIf="submitAttempted">
+    <div
+      *ngIf="
+        this | function : firstValidationError : form.value;
+        let firstValidationErrorKey
+      "
+      @slideVerticalAnimation
+      class="validation-error"
+    >
+      <div class="text">
+        {{ constants.DEFAULT_VALIDATION_MESSAGES[firstValidationErrorKey] }}
+      </div>
+    </div>
+  </ng-container>
+</ng-container>

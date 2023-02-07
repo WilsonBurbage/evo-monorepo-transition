@@ -1,0 +1,7 @@
+<app-counsels-dumb
+  [counsels]="(counsels$ | async)!"
+  (newCounselClicked)="onNewCounselClicked()"
+  (editCounselClicked)="onEditCounselClicked($event)"
+  (deleteCounselClicked)="onDeleteCounselClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-counsels-dumb>

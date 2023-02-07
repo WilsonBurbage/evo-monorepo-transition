@@ -1,0 +1,26 @@
+<div class="padded--all">
+  <div class="split split--vertically-centered">
+    <div class="split__item">
+      <h1>{{ title }}</h1>
+      <div class="small">
+        <ng-container *ngIf="filePath; else noFilePathTemplate">
+          {{ filePath }}
+          <ng-container *ngIf="evoFileHasChangedSinceSave">*</ng-container>
+        </ng-container>
+        <ng-template #noFilePathTemplate>New Evo file *</ng-template>
+      </div>
+    </div>
+    <div class="split__item--shrink split__item--right-aligned">
+      <app-button-set>
+        <app-button
+          [halfHeight]="true"
+          [secondary]="true"
+          [disabled]="this | function : settingsAreOpen : stackWidgets"
+          (clicked)="onSettingsClicked()"
+        >
+          Settings
+        </app-button>
+      </app-button-set>
+    </div>
+  </div>
+</div>

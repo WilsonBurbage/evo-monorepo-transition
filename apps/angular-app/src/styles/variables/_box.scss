@@ -1,0 +1,27 @@
+:root {
+  --box-size-root: 4px;
+
+  --box-size-1: calc(var(--box-size-root) * 1);
+  --box-size-2: calc(var(--box-size-root) * 2);
+  --box-size-3: calc(var(--box-size-root) * 3);
+  --box-size-4: calc(var(--box-size-root) * 4);
+  --box-size-5: calc(var(--box-size-root) * 5);
+  --box-size-6: calc(var(--box-size-root) * 6);
+  --box-size-7: calc(var(--box-size-root) * 7);
+  --box-size-8: calc(var(--box-size-root) * 8);
+  --box-size-9: calc(var(--box-size-root) * 9);
+  --box-size-10: calc(var(--box-size-root) * 10);
+
+  --spacer-size: calc(var(--box-size-root) * 4);
+
+  --border-radius-size: 4px;
+
+  --box-max-width-1: 500px;
+  --box-max-width-2: 750px;
+  --box-max-width-3: 1000px;
+  --box-max-width-4: 1500px;
+
+  --scrollbar-size: 10px;
+
+  --max-z-index: 50000;
+}

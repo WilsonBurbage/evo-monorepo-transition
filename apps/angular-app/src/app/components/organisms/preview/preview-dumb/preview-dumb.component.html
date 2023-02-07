@@ -1,0 +1,97 @@
+<div class="padded--all-but-top">
+  <div
+    *ngVar="
+      this
+        | function
+          : previewSetupForActivePreviewExportDocumentType
+          : activePreviewExportDocumentType as previewSetup
+    "
+  >
+    <div
+      class="paper max-width max-width--3"
+      [class.lined]="previewSetup.lined"
+      [class.padding-one]="previewSetup.padding === enums.PreviewPadding.one"
+      [class.padding-two]="previewSetup.padding === enums.PreviewPadding.two"
+    >
+      <app-icon-showcase *ngIf="false"></app-icon-showcase>
+
+      <table
+        [cellPadding]="0"
+        [cellSpacing]="0"
+      >
+        <thead
+          [class.empty]="
+            !(
+              this
+              | function
+                : previewHasAnyVisibleColumnTitles
+                : activePreviewExportDocumentType
+                : columns
+            )
+          "
+        >
+          <ng-container *ngFor="let column of columns; let columnIndex = index">
+            <td
+              [width]="column.width"
+              [class.aligned-left]="column.alignment === enums.Alignment.left"
+              [class.aligned-centre]="
+                column.alignment === enums.Alignment.centre
+              "
+              [class.aligned-right]="column.alignment === enums.Alignment.right"
+              [class.inset]="column.inset"
+            >
+              <div class="cell-content">{{ column.title }}</div>
+            </td>
+          </ng-container>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let row of rows; let rowIndex = index">
+            <ng-container
+              *ngVar="
+                this
+                  | function
+                    : exportRowCellsAsArray
+                    : row.cells
+                    : activePreviewExportDocumentType
+                    : columns
+                    : rows as cellsArray
+              "
+            >
+              <tr
+                [attr.jump-to-id]="row.jumpToLink?.id"
+                [class.has-link]="row.stackWidgetReference"
+                (dblclick)="onExportRowDoubleClicked(row)"
+              >
+                <ng-container
+                  *ngFor="let cell of cellsArray; let cellIndex = index"
+                >
+                  <td
+                    [class.unspaced]="row.unspaced"
+                    [class.aligned-left]="
+                      cell.alignment === enums.Alignment.left
+                    "
+                    [class.aligned-centre]="
+                      cell.alignment === enums.Alignment.centre
+                    "
+                    [class.aligned-right]="
+                      cell.alignment === enums.Alignment.right
+                    "
+                    [class.bold]="cell.bold"
+                    [class.italic]="cell.italic"
+                    [class.underline]="cell.underline"
+                    [class.inset]="columns[cellIndex].inset"
+                  >
+                    <div
+                      class="cell-content"
+                      [innerHTML]="cell.text | plainTextToHtml"
+                    ></div>
+                  </td>
+                </ng-container>
+              </tr>
+            </ng-container>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1442 @@
+{
+  "timestamp": "2023-01-30",
+  "state": {
+    "authentication": {
+      "authentication": { "status": "ready" },
+      "authenticationKeyCheck": { "status": "success" }
+    },
+    "evoFile": {
+      "opening": { "status": "success" },
+      "saving": { "status": "ready" },
+      "filePath": "",
+      "hash": ""
+    },
+    "evoSettings": {
+      "opening": { "status": "success" },
+      "saving": { "status": "success" }
+    },
+    "toastMessages": { "ids": [], "entities": {} },
+    "ui": {
+      "billIsFullyLoaded": true,
+      "billSelectorsEnabled": true,
+      "stackWidgets": [],
+      "activePartId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+      "activeFeeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+      "activePreviewExportDocumentType": "frontSheet"
+    },
+    "wordFile": { "exporting": { "status": "success" } },
+    "textReplacements": {
+      "ids": [
+        "text-replacement-57b58cf2-6837-4468-a37f-969e9c966b7f",
+        "text-replacement-908bc893-7c8d-4319-ab35-90006d8a706d",
+        "text-replacement-d80bcef5-ded1-47ce-818b-dd5d104e039d",
+        "text-replacement-17fa4fe0-1f25-4384-b802-6eed23ea12c0",
+        "text-replacement-5b83acd3-53d3-4a75-8823-55eef62aaa46",
+        "text-replacement-26f70eb7-2c87-4ebc-b457-82bbd038bdca",
+        "text-replacement-041f622c-04bb-48b0-98fe-ab62c75f5e32",
+        "text-replacement-148f30f5-8409-4ef2-a709-c1e7b19b52c0",
+        "text-replacement-68a6ec9c-a667-4dc0-938f-5c041a9d860e",
+        "text-replacement-882d336d-7a13-426e-9b1c-a08c2ae62bea",
+        "text-replacement-a2a45c20-3411-4e5d-bad9-90b41c835d11",
+        "text-replacement-b1e9b548-677c-492b-aba5-3c88669051ba"
+      ],
+      "entities": {
+        "text-replacement-57b58cf2-6837-4468-a37f-969e9c966b7f": {
+          "id": "text-replacement-57b58cf2-6837-4468-a37f-969e9c966b7f",
+          "input": "boc",
+          "output": "Considering and perusing bill of costs and dealing with legal formalities - Engaged"
+        },
+        "text-replacement-908bc893-7c8d-4319-ab35-90006d8a706d": {
+          "id": "text-replacement-908bc893-7c8d-4319-ab35-90006d8a706d",
+          "input": "clsalt",
+          "output": "CLAIMANT'S BILL OF COSTS TO BE ASSESSED PURSUANT TO THE ORDER DATED AND IN ACCORDANCE WITH REGULATION 107A OF THE CIVIL LEGAL AID (GENERAL) REGULATIONS 1989"
+        },
+        "text-replacement-d80bcef5-ded1-47ce-818b-dd5d104e039d": {
+          "id": "text-replacement-d80bcef5-ded1-47ce-818b-dd5d104e039d",
+          "input": "clsdesc",
+          "output": "THE CLAIMANT'S BILL OF COSTS FOR DETAILED ASSESSMENT ON THE STANDARD BASIS AGAINST THE COMMUNITY LEGAL SERVICE FUND IN ACCORDANCE WITH REGULATION 107(A) OF THE CIVIL LEGAL AID (GENERAL) REGULATIONS 1989 (AS AMENDED) PURSUANT TO THE ORDER DATED"
+        },
+        "text-replacement-17fa4fe0-1f25-4384-b802-6eed23ea12c0": {
+          "id": "text-replacement-17fa4fe0-1f25-4384-b802-6eed23ea12c0",
+          "input": "crucert",
+          "output": "Considering CRU certificate"
+        },
+        "text-replacement-5b83acd3-53d3-4a75-8823-55eef62aaa46": {
+          "id": "text-replacement-5b83acd3-53d3-4a75-8823-55eef62aaa46",
+          "input": "fnta",
+          "output": "Drafting file note following telephone attendance"
+        },
+        "text-replacement-26f70eb7-2c87-4ebc-b457-82bbd038bdca": {
+          "id": "text-replacement-26f70eb7-2c87-4ebc-b457-82bbd038bdca",
+          "input": "fntac",
+          "output": "Drafting file note following telephone attendance with Claimant"
+        },
+        "text-replacement-041f622c-04bb-48b0-98fe-ab62c75f5e32": {
+          "id": "text-replacement-041f622c-04bb-48b0-98fe-ab62c75f5e32",
+          "input": "fntad",
+          "output": "Drafting file note following telephone attendance with Defendant"
+        },
+        "text-replacement-148f30f5-8409-4ef2-a709-c1e7b19b52c0": {
+          "id": "text-replacement-148f30f5-8409-4ef2-a709-c1e7b19b52c0",
+          "input": "ipalt",
+          "output": "CLAIMANT'S BILL OF COSTS TO BE ASSESSED PURSUANT TO THE ORDER DATED"
+        },
+        "text-replacement-68a6ec9c-a667-4dc0-938f-5c041a9d860e": {
+          "id": "text-replacement-68a6ec9c-a667-4dc0-938f-5c041a9d860e",
+          "input": "ipcls",
+          "output": "CLAIMANT'S BILL OF COSTS FOR DETAILED ASSESSMENT ON THE STANDARD BASIS AND PAYABLE BY THE DEFENDANT AND AGAINST THE COMMUNITY LEGAL SERVICE FUND IN ACCORDANCE WITH REGULATION 107(A) OF THE CIVIL LEGAL AID (GENERAL) REGULATIONS 1989 (AS AMENDED) PURSUANT TO THE ORDER OF   DATED "
+        },
+        "text-replacement-882d336d-7a13-426e-9b1c-a08c2ae62bea": {
+          "id": "text-replacement-882d336d-7a13-426e-9b1c-a08c2ae62bea",
+          "input": "ipdesc",
+          "output": "CLAIMANT'S BILL OF COSTS FOR DETAILED ASSESSMENT ON THE STANDARD BASIS AND PAYABLE BY THE DEFENDANT PURSUANT TO THE ORDER OF   DATED"
+        },
+        "text-replacement-a2a45c20-3411-4e5d-bad9-90b41c835d11": {
+          "id": "text-replacement-a2a45c20-3411-4e5d-bad9-90b41c835d11",
+          "input": "taw",
+          "output": "travel and waiting"
+        },
+        "text-replacement-b1e9b548-677c-492b-aba5-3c88669051ba": {
+          "id": "text-replacement-b1e9b548-677c-492b-aba5-3c88669051ba",
+          "input": "tii",
+          "output": "Taking initial instructions"
+        }
+      }
+    },
+    "attendances": {
+      "ids": [
+        "attendance-69f4145a-9917-44e7-b79d-77707830c79d",
+        "attendance-4dcb3d2e-9e95-4a75-b8e2-850a437ec6a4",
+        "attendance-c0124174-3f76-4f76-bf4a-f8ae95139322",
+        "attendance-63648e08-76bc-42e4-92de-d19ee3760913",
+        "attendance-4685ae8a-2bfe-439d-bb81-b2e7e2b618ea",
+        "attendance-0d3fe7cd-e48f-4965-bd62-31801b5db546",
+        "attendance-918ed179-b03c-451a-9808-ba8311087786",
+        "attendance-83b6c0e6-4087-4ec0-b0f3-63f9bbd04017",
+        "attendance-3a0600ef-d4a6-41f3-991a-0f6d064b88f8",
+        "attendance-c17b4ad8-d2c0-4405-98e8-f204194adb2a",
+        "attendance-ae58fe8b-46a8-4c11-a9fd-b2d80dcc0cca",
+        "attendance-3cd78626-0bdd-4d1a-addc-7910c54c723d",
+        "attendance-ef4e1e22-f2fc-496f-becc-a390fd705848",
+        "attendance-4e77a0d4-f117-47ef-896c-855208915fd3",
+        "attendance-97378eee-2fcf-44d4-bd53-7d3b0dda1c16",
+        "attendance-02d5853d-6949-41ae-af65-c84e32145875",
+        "attendance-6a58ccc6-3d1e-4bc8-87b5-52003ffd1166",
+        "attendance-6eecdc38-b9ac-4d7e-8354-720ea8e166d7",
+        "attendance-c1699048-de1f-450f-b2f9-76bb23b9a1e6",
+        "attendance-b02f416b-37a1-40f1-954f-0d58bc8e3090"
+      ],
+      "entities": {
+        "attendance-69f4145a-9917-44e7-b79d-77707830c79d": {
+          "id": "attendance-69f4145a-9917-44e7-b79d-77707830c79d",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Engaged in court",
+          "time": "1:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b",
+          "notes": "",
+          "chronologyStepId": "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524"
+        },
+        "attendance-4dcb3d2e-9e95-4a75-b8e2-850a437ec6a4": {
+          "id": "attendance-4dcb3d2e-9e95-4a75-b8e2-850a437ec6a4",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Travel and waiting",
+          "time": "2:00",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": true,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524"
+        },
+        "attendance-c0124174-3f76-4f76-bf4a-f8ae95139322": {
+          "id": "attendance-c0124174-3f76-4f76-bf4a-f8ae95139322",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Engaged in court",
+          "time": "5:00",
+          "advocacy": false,
+          "counsel": true,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "attendance-63648e08-76bc-42e4-92de-d19ee3760913": {
+          "id": "attendance-63648e08-76bc-42e4-92de-d19ee3760913",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Engaged in conference",
+          "time": "0:45",
+          "advocacy": false,
+          "counsel": true,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "attendance-4685ae8a-2bfe-439d-bb81-b2e7e2b618ea": {
+          "id": "attendance-4685ae8a-2bfe-439d-bb81-b2e7e2b618ea",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Travel and waiting",
+          "time": "1:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": true,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "attendance-0d3fe7cd-e48f-4965-bd62-31801b5db546": {
+          "id": "attendance-0d3fe7cd-e48f-4965-bd62-31801b5db546",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Engaged in court",
+          "time": "3:00",
+          "advocacy": false,
+          "counsel": true,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4"
+        },
+        "attendance-918ed179-b03c-451a-9808-ba8311087786": {
+          "id": "attendance-918ed179-b03c-451a-9808-ba8311087786",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Engaged in conference",
+          "time": "1:30",
+          "advocacy": false,
+          "counsel": true,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4"
+        },
+        "attendance-83b6c0e6-4087-4ec0-b0f3-63f9bbd04017": {
+          "id": "attendance-83b6c0e6-4087-4ec0-b0f3-63f9bbd04017",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Travel and waiting",
+          "time": "1:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": true,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "chronologyStepId": "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4"
+        },
+        "attendance-3a0600ef-d4a6-41f3-991a-0f6d064b88f8": {
+          "id": "attendance-3a0600ef-d4a6-41f3-991a-0f6d064b88f8",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "1980-12-04",
+          "description": "Preparing and checking bill - Engaged",
+          "time": "1:00",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "partSpecificAttendanceType": "otherWork"
+        },
+        "attendance-c17b4ad8-d2c0-4405-98e8-f204194adb2a": {
+          "id": "attendance-c17b4ad8-d2c0-4405-98e8-f204194adb2a",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "date": "1980-12-04",
+          "description": "Engaged Costs Draftsman",
+          "time": "4:00",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "partSpecificAttendanceType": "otherWork"
+        },
+        "attendance-ae58fe8b-46a8-4c11-a9fd-b2d80dcc0cca": {
+          "id": "attendance-ae58fe8b-46a8-4c11-a9fd-b2d80dcc0cca",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2000-01-01",
+          "description": "Engaged with party",
+          "time": "5:12",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-87915676-5753-417c-a768-8e7c0191d94e"
+        },
+        "attendance-3cd78626-0bdd-4d1a-addc-7910c54c723d": {
+          "id": "attendance-3cd78626-0bdd-4d1a-addc-7910c54c723d",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2000-07-08",
+          "description": "First instructions",
+          "time": "7:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b",
+          "notes": "",
+          "partyId": "party-e3a5f918-0f22-41d8-aa58-8e1627683530"
+        },
+        "attendance-ef4e1e22-f2fc-496f-becc-a390fd705848": {
+          "id": "attendance-ef4e1e22-f2fc-496f-becc-a390fd705848",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "date": "2000-07-08",
+          "description": "First instructions",
+          "time": "0:45",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-e3a5f918-0f22-41d8-aa58-8e1627683530"
+        },
+        "attendance-4e77a0d4-f117-47ef-896c-855208915fd3": {
+          "id": "attendance-4e77a0d4-f117-47ef-896c-855208915fd3",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2000-09-11",
+          "description": "long letter out",
+          "time": "0:20",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28"
+        },
+        "attendance-97378eee-2fcf-44d4-bd53-7d3b0dda1c16": {
+          "id": "attendance-97378eee-2fcf-44d4-bd53-7d3b0dda1c16",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-01-30",
+          "description": "long letter out",
+          "time": "0:15",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28"
+        },
+        "attendance-02d5853d-6949-41ae-af65-c84e32145875": {
+          "id": "attendance-02d5853d-6949-41ae-af65-c84e32145875",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-02-19",
+          "description": "telephone call",
+          "time": "0:15",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": true,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1"
+        },
+        "attendance-6a58ccc6-3d1e-4bc8-87b5-52003ffd1166": {
+          "id": "attendance-6a58ccc6-3d1e-4bc8-87b5-52003ffd1166",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-03-23",
+          "description": "Meeting at offices of Solicitors for the Defendant - Engaged",
+          "time": "1:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-3afea552-7824-416d-9c03-377fa50720e7"
+        },
+        "attendance-6eecdc38-b9ac-4d7e-8354-720ea8e166d7": {
+          "id": "attendance-6eecdc38-b9ac-4d7e-8354-720ea8e166d7",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-03-23",
+          "description": "Travel and waiting",
+          "time": "1:15",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": true,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-3afea552-7824-416d-9c03-377fa50720e7"
+        },
+        "attendance-c1699048-de1f-450f-b2f9-76bb23b9a1e6": {
+          "id": "attendance-c1699048-de1f-450f-b2f9-76bb23b9a1e6",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-05-23",
+          "description": "telephone call",
+          "time": "0:12",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": false,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": true,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28"
+        },
+        "attendance-b02f416b-37a1-40f1-954f-0d58bc8e3090": {
+          "id": "attendance-b02f416b-37a1-40f1-954f-0d58bc8e3090",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2001-07-08",
+          "description": "timed letter sent",
+          "time": "0:30",
+          "advocacy": false,
+          "counsel": false,
+          "estimated": false,
+          "other": true,
+          "partClaimed": false,
+          "timedLetterOut": false,
+          "timedTelephoneAttendance": false,
+          "travelAndWaiting": false,
+          "billFee": false,
+          "enhancementId": "",
+          "notes": "",
+          "partyId": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1"
+        }
+      }
+    },
+    "billSetup": {
+      "billSetup": {
+        "title": "Precedent (A) - 3 column",
+        "billType": "threeColumn",
+        "autoNumberParts": true,
+        "includeNotesInBill": false,
+        "includePartSummaries": true
+      }
+    },
+    "caseParties": {
+      "ids": [
+        "case-party-b472f116-cc8b-4c77-8565-0dddb4be6c8a",
+        "case-party-a34cdb52-e2a1-44b4-9532-07c141c4a52e"
+      ],
+      "entities": {
+        "case-party-b472f116-cc8b-4c77-8565-0dddb4be6c8a": {
+          "id": "case-party-b472f116-cc8b-4c77-8565-0dddb4be6c8a",
+          "name": "AB",
+          "category": "Claimant"
+        },
+        "case-party-a34cdb52-e2a1-44b4-9532-07c141c4a52e": {
+          "id": "case-party-a34cdb52-e2a1-44b4-9532-07c141c4a52e",
+          "name": "CD",
+          "category": "Defendant"
+        }
+      }
+    },
+    "chronologySteps": {
+      "ids": [
+        "chronology-step-2441e76d-2782-495c-9f0e-98e5bd151f36",
+        "chronology-step-535f3eee-fb65-4910-a14c-79b4cb4492c1",
+        "chronology-step-329b9d01-bf18-437e-a13d-4bc9344cd92d",
+        "chronology-step-f585e6fb-bf00-4ec8-8b88-6c83ab230292",
+        "chronology-step-92d5ca84-41a6-4d91-a757-f8453a3e75c3",
+        "chronology-step-6d80e319-32cf-434b-b87e-0b9154469a7c",
+        "chronology-step-ced2af89-99a1-4e02-824a-a74918fca177",
+        "chronology-step-388e53bf-14a4-4420-b80a-bdac843267da",
+        "chronology-step-931ddcfb-d602-4d4a-b2bd-2478b133c74a",
+        "chronology-step-a8e40644-a008-4a9b-8a62-92ae95ba5b63",
+        "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524",
+        "chronology-step-62004970-8dcd-4535-88da-58d04a83b378",
+        "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4"
+      ],
+      "entities": {
+        "chronology-step-2441e76d-2782-495c-9f0e-98e5bd151f36": {
+          "id": "chronology-step-2441e76d-2782-495c-9f0e-98e5bd151f36",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2000-07-08",
+          "description": "E F & Co instructed"
+        },
+        "chronology-step-535f3eee-fb65-4910-a14c-79b4cb4492c1": {
+          "id": "chronology-step-535f3eee-fb65-4910-a14c-79b4cb4492c1",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2000-07-22",
+          "description": "AEI with Eastbird Legal Protection Ltd"
+        },
+        "chronology-step-329b9d01-bf18-437e-a13d-4bc9344cd92d": {
+          "id": "chronology-step-329b9d01-bf18-437e-a13d-4bc9344cd92d",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2000-10-07",
+          "description": "Claim issued"
+        },
+        "chronology-step-f585e6fb-bf00-4ec8-8b88-6c83ab230292": {
+          "id": "chronology-step-f585e6fb-bf00-4ec8-8b88-6c83ab230292",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2000-10-21",
+          "description": "Particulars of claim served"
+        },
+        "chronology-step-92d5ca84-41a6-4d91-a757-f8453a3e75c3": {
+          "id": "chronology-step-92d5ca84-41a6-4d91-a757-f8453a3e75c3",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2000-11-25",
+          "description": "Time for service of defence extended by agreement to 14th January 2001"
+        },
+        "chronology-step-6d80e319-32cf-434b-b87e-0b9154469a7c": {
+          "id": "chronology-step-6d80e319-32cf-434b-b87e-0b9154469a7c",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-01-20",
+          "description": "Case allocated to multi-track"
+        },
+        "chronology-step-ced2af89-99a1-4e02-824a-a74918fca177": {
+          "id": "chronology-step-ced2af89-99a1-4e02-824a-a74918fca177",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-02-09",
+          "description": "Case management conference at which costs were awarded to the claimant and the base costs were summarily assessed at £400 (paid on 24th February 2001)"
+        },
+        "chronology-step-388e53bf-14a4-4420-b80a-bdac843267da": {
+          "id": "chronology-step-388e53bf-14a4-4420-b80a-bdac843267da",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-02-23",
+          "description": "Claimants list of documents"
+        },
+        "chronology-step-931ddcfb-d602-4d4a-b2bd-2478b133c74a": {
+          "id": "chronology-step-931ddcfb-d602-4d4a-b2bd-2478b133c74a",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-04-12",
+          "description": "Payment into court of £25,126.33"
+        },
+        "chronology-step-a8e40644-a008-4a9b-8a62-92ae95ba5b63": {
+          "id": "chronology-step-a8e40644-a008-4a9b-8a62-92ae95ba5b63",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-04-13",
+          "description": "Filing pre-trial checklist"
+        },
+        "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524": {
+          "id": "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-06-28",
+          "description": "Pre-trial review: costs in case"
+        },
+        "chronology-step-62004970-8dcd-4535-88da-58d04a83b378": {
+          "id": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-07-25",
+          "description": "Attending first day of trial: adjourned part heard"
+        },
+        "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4": {
+          "id": "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "date": "2001-07-26",
+          "description": "Attending second day of trial when judgment was given for the claimant in the sum of £78,256.83 plus £1,207.16 interest plus costs"
+        }
+      }
+    },
+    "correspondenceCounters": {
+      "ids": [
+        "correspondence-counter-dbdbd546-2c54-45a3-aa76-328002a74641",
+        "correspondence-counter-85c5c430-75cd-4315-9c1a-3dbea125c844",
+        "correspondence-counter-1b1d6675-44e7-4670-b222-c72c34c1c756",
+        "correspondence-counter-dfba9e3e-2f19-4177-8ad3-cd68eb2fbeb7",
+        "correspondence-counter-5dca2182-f9de-4cae-9b5e-98b84b6f4da6",
+        "correspondence-counter-c4e70c95-9bae-4d25-a610-6c075a86ca0f",
+        "correspondence-counter-f60abf43-ca44-4c6b-bbfa-142d36f0f04e",
+        "correspondence-counter-c9fc35fa-6360-4ee5-8d77-83364f0e0217",
+        "correspondence-counter-8e9d5656-7f2f-4996-8550-dfacc48e546a",
+        "correspondence-counter-3af918c1-0b97-4285-bc03-0e128b43cc37",
+        "correspondence-counter-371d2feb-9a97-46cd-88e3-913384484927",
+        "correspondence-counter-08806713-efcc-4b76-858d-c92589754b6d",
+        "correspondence-counter-8f9c1755-9e8e-48e9-825c-e94d43f8a30c",
+        "correspondence-counter-adac38f9-44e7-480a-b8d7-595d79a8e0b9",
+        "correspondence-counter-967941fb-a801-4f5f-810d-ea5da07e73e7",
+        "correspondence-counter-ecb906cb-d641-4b1f-9ded-f836214d7a59",
+        "correspondence-counter-e9ce42fa-82cf-4450-a15b-38aaed55b338",
+        "correspondence-counter-ba8c941a-4aa9-4632-a34f-f3a22b4f9c71",
+        "correspondence-counter-23fa8266-8004-4eb9-8fbb-79e4fab73ca3",
+        "correspondence-counter-bfe8c767-6a5a-4991-b324-abcdea9c2dfa",
+        "correspondence-counter-48e4927e-81ce-462d-a57a-d95d8c66f542"
+      ],
+      "entities": {
+        "correspondence-counter-dbdbd546-2c54-45a3-aa76-328002a74641": {
+          "id": "correspondence-counter-dbdbd546-2c54-45a3-aa76-328002a74641",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-e3a5f918-0f22-41d8-aa58-8e1627683530",
+          "calls": 12,
+          "lettersIn": 0,
+          "lettersOut": 17
+        },
+        "correspondence-counter-85c5c430-75cd-4315-9c1a-3dbea125c844": {
+          "id": "correspondence-counter-85c5c430-75cd-4315-9c1a-3dbea125c844",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-87915676-5753-417c-a768-8e7c0191d94e",
+          "calls": 2,
+          "lettersIn": 0,
+          "lettersOut": 6
+        },
+        "correspondence-counter-1b1d6675-44e7-4670-b222-c72c34c1c756": {
+          "id": "correspondence-counter-1b1d6675-44e7-4670-b222-c72c34c1c756",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28",
+          "calls": 4,
+          "lettersIn": 0,
+          "lettersOut": 6
+        },
+        "correspondence-counter-dfba9e3e-2f19-4177-8ad3-cd68eb2fbeb7": {
+          "id": "correspondence-counter-dfba9e3e-2f19-4177-8ad3-cd68eb2fbeb7",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1",
+          "calls": 6,
+          "lettersIn": 0,
+          "lettersOut": 18
+        },
+        "correspondence-counter-5dca2182-f9de-4cae-9b5e-98b84b6f4da6": {
+          "id": "correspondence-counter-5dca2182-f9de-4cae-9b5e-98b84b6f4da6",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9",
+          "calls": 1,
+          "lettersIn": 0,
+          "lettersOut": 8
+        },
+        "correspondence-counter-c4e70c95-9bae-4d25-a610-6c075a86ca0f": {
+          "id": "correspondence-counter-c4e70c95-9bae-4d25-a610-6c075a86ca0f",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-0bc37c28-baae-472d-a2ea-c587bab824e4",
+          "calls": 8,
+          "lettersIn": 0,
+          "lettersOut": 11
+        },
+        "correspondence-counter-f60abf43-ca44-4c6b-bbfa-142d36f0f04e": {
+          "id": "correspondence-counter-f60abf43-ca44-4c6b-bbfa-142d36f0f04e",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-e3a5f918-0f22-41d8-aa58-8e1627683530",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-c9fc35fa-6360-4ee5-8d77-83364f0e0217": {
+          "id": "correspondence-counter-c9fc35fa-6360-4ee5-8d77-83364f0e0217",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-87915676-5753-417c-a768-8e7c0191d94e",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-8e9d5656-7f2f-4996-8550-dfacc48e546a": {
+          "id": "correspondence-counter-8e9d5656-7f2f-4996-8550-dfacc48e546a",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-3af918c1-0b97-4285-bc03-0e128b43cc37": {
+          "id": "correspondence-counter-3af918c1-0b97-4285-bc03-0e128b43cc37",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-371d2feb-9a97-46cd-88e3-913384484927": {
+          "id": "correspondence-counter-371d2feb-9a97-46cd-88e3-913384484927",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-08806713-efcc-4b76-858d-c92589754b6d": {
+          "id": "correspondence-counter-08806713-efcc-4b76-858d-c92589754b6d",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-0bc37c28-baae-472d-a2ea-c587bab824e4",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-8f9c1755-9e8e-48e9-825c-e94d43f8a30c": {
+          "id": "correspondence-counter-8f9c1755-9e8e-48e9-825c-e94d43f8a30c",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "partyId": "party-3afea552-7824-416d-9c03-377fa50720e7",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-adac38f9-44e7-480a-b8d7-595d79a8e0b9": {
+          "id": "correspondence-counter-adac38f9-44e7-480a-b8d7-595d79a8e0b9",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "partyId": "party-3afea552-7824-416d-9c03-377fa50720e7",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-967941fb-a801-4f5f-810d-ea5da07e73e7": {
+          "id": "correspondence-counter-967941fb-a801-4f5f-810d-ea5da07e73e7",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-e3a5f918-0f22-41d8-aa58-8e1627683530",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-ecb906cb-d641-4b1f-9ded-f836214d7a59": {
+          "id": "correspondence-counter-ecb906cb-d641-4b1f-9ded-f836214d7a59",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-87915676-5753-417c-a768-8e7c0191d94e",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-e9ce42fa-82cf-4450-a15b-38aaed55b338": {
+          "id": "correspondence-counter-e9ce42fa-82cf-4450-a15b-38aaed55b338",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-ba8c941a-4aa9-4632-a34f-f3a22b4f9c71": {
+          "id": "correspondence-counter-ba8c941a-4aa9-4632-a34f-f3a22b4f9c71",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-23fa8266-8004-4eb9-8fbb-79e4fab73ca3": {
+          "id": "correspondence-counter-23fa8266-8004-4eb9-8fbb-79e4fab73ca3",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-bfe8c767-6a5a-4991-b324-abcdea9c2dfa": {
+          "id": "correspondence-counter-bfe8c767-6a5a-4991-b324-abcdea9c2dfa",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-0bc37c28-baae-472d-a2ea-c587bab824e4",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        },
+        "correspondence-counter-48e4927e-81ce-462d-a57a-d95d8c66f542": {
+          "id": "correspondence-counter-48e4927e-81ce-462d-a57a-d95d8c66f542",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "partyId": "party-3afea552-7824-416d-9c03-377fa50720e7",
+          "calls": 0,
+          "lettersIn": 0,
+          "lettersOut": 0
+        }
+      }
+    },
+    "counsels": {
+      "ids": ["counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f"],
+      "entities": {
+        "counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f": {
+          "id": "counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f",
+          "name": "Miss GH",
+          "hasSuccessFee": true,
+          "successFeePercentage": 75,
+          "attractsVat": true
+        }
+      }
+    },
+    "coverSheetItems": {
+      "ids": [
+        "cover-sheet-item-9d4dba8a-b76d-4e4f-9329-24c651c32d20",
+        "cover-sheet-item-121387fb-6085-4cb9-9eb1-d7036634a5a9",
+        "cover-sheet-item-6a7532ae-06d6-4a49-94ed-4a83c46cc57b",
+        "cover-sheet-item-5dbbf090-2c70-4812-aae2-e9a94594ede4",
+        "cover-sheet-item-f297cbd0-85c0-493f-93d3-558655d05ba8",
+        "cover-sheet-item-269b68fd-2a68-4836-baf7-93d99aa5372e",
+        "cover-sheet-item-4387ad98-8c69-49ce-8974-a9767d6f5f66",
+        "cover-sheet-item-1b2f7bd9-bed9-4d63-9ab7-1e93366350a4",
+        "cover-sheet-item-0438cb59-0a5e-424c-9475-91a80976677d",
+        "cover-sheet-item-62e4507b-25d3-47e1-b420-c758f6c93d86",
+        "cover-sheet-item-2c29e991-417a-4785-bcc1-f39228bb2401",
+        "cover-sheet-item-1fdc2e10-d69e-4b6a-8175-a1653de36682",
+        "cover-sheet-item-c99fd619-198e-4596-b54b-2f7a21f3be91",
+        "cover-sheet-item-bfe724a0-0dd1-4806-887c-0f1d50ba18ae"
+      ],
+      "entities": {
+        "cover-sheet-item-9d4dba8a-b76d-4e4f-9329-24c651c32d20": {
+          "id": "cover-sheet-item-9d4dba8a-b76d-4e4f-9329-24c651c32d20",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "court",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-121387fb-6085-4cb9-9eb1-d7036634a5a9": {
+          "id": "cover-sheet-item-121387fb-6085-4cb9-9eb1-d7036634a5a9",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "claimNumber",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-6a7532ae-06d6-4a49-94ed-4a83c46cc57b": {
+          "id": "cover-sheet-item-6a7532ae-06d6-4a49-94ed-4a83c46cc57b",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "caseParties",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-5dbbf090-2c70-4812-aae2-e9a94594ede4": {
+          "id": "cover-sheet-item-5dbbf090-2c70-4812-aae2-e9a94594ede4",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "vatDetails",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-f297cbd0-85c0-493f-93d3-558655d05ba8": {
+          "id": "cover-sheet-item-f297cbd0-85c0-493f-93d3-558655d05ba8",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "solicitorDetails",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-269b68fd-2a68-4836-baf7-93d99aa5372e": {
+          "id": "cover-sheet-item-269b68fd-2a68-4836-baf7-93d99aa5372e",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "spacer",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-4387ad98-8c69-49ce-8974-a9767d6f5f66": {
+          "id": "cover-sheet-item-4387ad98-8c69-49ce-8974-a9767d6f5f66",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "text",
+          "text": "Proident amet velit cupidatat laborum magna nisi id quis exercitation duis irure et et laboris. Fugiat adipisicing fugiat cupidatat quis anim id irure et occaecat.",
+          "alignment": "centre",
+          "bold": true,
+          "underline": true,
+          "italic": true
+        },
+        "cover-sheet-item-1b2f7bd9-bed9-4d63-9ab7-1e93366350a4": {
+          "id": "cover-sheet-item-1b2f7bd9-bed9-4d63-9ab7-1e93366350a4",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "narrative",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-0438cb59-0a5e-424c-9475-91a80976677d": {
+          "id": "cover-sheet-item-0438cb59-0a5e-424c-9475-91a80976677d",
+          "coverSheetType": "frontSheet",
+          "coverSheetItemType": "ratesApplied",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-62e4507b-25d3-47e1-b420-c758f6c93d86": {
+          "id": "cover-sheet-item-62e4507b-25d3-47e1-b420-c758f6c93d86",
+          "coverSheetType": "backSheet",
+          "coverSheetItemType": "caseParties",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-2c29e991-417a-4785-bcc1-f39228bb2401": {
+          "id": "cover-sheet-item-2c29e991-417a-4785-bcc1-f39228bb2401",
+          "coverSheetType": "backSheet",
+          "coverSheetItemType": "vatDetails",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-1fdc2e10-d69e-4b6a-8175-a1653de36682": {
+          "id": "cover-sheet-item-1fdc2e10-d69e-4b6a-8175-a1653de36682",
+          "coverSheetType": "backSheet",
+          "coverSheetItemType": "solicitorDetails",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-c99fd619-198e-4596-b54b-2f7a21f3be91": {
+          "id": "cover-sheet-item-c99fd619-198e-4596-b54b-2f7a21f3be91",
+          "coverSheetType": "backSheet",
+          "coverSheetItemType": "spacer",
+          "text": "",
+          "alignment": "left",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        },
+        "cover-sheet-item-bfe724a0-0dd1-4806-887c-0f1d50ba18ae": {
+          "id": "cover-sheet-item-bfe724a0-0dd1-4806-887c-0f1d50ba18ae",
+          "coverSheetType": "backSheet",
+          "coverSheetItemType": "text",
+          "text": "Velit nisi aliquip qui culpa commodo labore ut eu cupidatat exercitation commodo. Exercitation occaecat fugiat labore sunt cupidatat ullamco labore sit deserunt.",
+          "alignment": "right",
+          "bold": false,
+          "underline": false,
+          "italic": false
+        }
+      }
+    },
+    "disbursements": {
+      "ids": [
+        "disbursement-94ecc0a6-c1f1-4f3b-86f9-2a910ef7d1ac",
+        "disbursement-1e15e1b9-1eba-48de-b50c-6d3b848e477d",
+        "disbursement-76317431-b49f-4cd1-9be8-81071dc394bd",
+        "disbursement-da7fbfdb-75e8-4030-9d8e-b2225a0b2cb0",
+        "disbursement-96028f75-609b-4d40-8983-76da4c67c264",
+        "disbursement-fa75f1ef-1433-450a-a131-349275832980",
+        "disbursement-e4e0f022-022a-4759-86ba-d8ffcbd07a4b",
+        "disbursement-5f89f689-3850-4280-8001-4d76f47e1270",
+        "disbursement-92064084-eb02-4505-adf7-00fb8467f515",
+        "disbursement-1cf1f41d-c7c1-42d5-839a-7093e381c8c2",
+        "disbursement-235ae599-991b-4f6c-b4dc-3782ef4553e5"
+      ],
+      "entities": {
+        "disbursement-94ecc0a6-c1f1-4f3b-86f9-2a910ef7d1ac": {
+          "id": "disbursement-94ecc0a6-c1f1-4f3b-86f9-2a910ef7d1ac",
+          "description": "Premium for policy",
+          "amount": 120,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "nulla aute non ad do mollit eiusmod fugiat proident do incididunt amet veniam incididunt occaecat cupidatat tempor qui in deserunt",
+          "chronologyStepId": "chronology-step-535f3eee-fb65-4910-a14c-79b4cb4492c1"
+        },
+        "disbursement-1e15e1b9-1eba-48de-b50c-6d3b848e477d": {
+          "id": "disbursement-1e15e1b9-1eba-48de-b50c-6d3b848e477d",
+          "description": "Issue fee",
+          "amount": 400,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-329b9d01-bf18-437e-a13d-4bc9344cd92d"
+        },
+        "disbursement-76317431-b49f-4cd1-9be8-81071dc394bd": {
+          "id": "disbursement-76317431-b49f-4cd1-9be8-81071dc394bd",
+          "description": "Fee on allocation",
+          "amount": 80,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-92d5ca84-41a6-4d91-a757-f8453a3e75c3"
+        },
+        "disbursement-da7fbfdb-75e8-4030-9d8e-b2225a0b2cb0": {
+          "id": "disbursement-da7fbfdb-75e8-4030-9d8e-b2225a0b2cb0",
+          "description": "Fee on listing",
+          "amount": 400,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-a8e40644-a008-4a9b-8a62-92ae95ba5b63"
+        },
+        "disbursement-96028f75-609b-4d40-8983-76da4c67c264": {
+          "id": "disbursement-96028f75-609b-4d40-8983-76da4c67c264",
+          "description": "Counsels base fee for pre-trial review",
+          "amount": 600,
+          "vat": 105,
+          "counselId": "counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f",
+          "hasCounselSuccessFee": true,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-1e41e514-a1d1-4695-8a57-3e4c736f3524"
+        },
+        "disbursement-fa75f1ef-1433-450a-a131-349275832980": {
+          "id": "disbursement-fa75f1ef-1433-450a-a131-349275832980",
+          "description": "Counsels base fee for trial",
+          "amount": 2000,
+          "vat": 350,
+          "counselId": "counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f",
+          "hasCounselSuccessFee": true,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "disbursement-e4e0f022-022a-4759-86ba-d8ffcbd07a4b": {
+          "id": "disbursement-e4e0f022-022a-4759-86ba-d8ffcbd07a4b",
+          "description": "Fee of expert witness (Dr. IJ)",
+          "amount": 850,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "disbursement-5f89f689-3850-4280-8001-4d76f47e1270": {
+          "id": "disbursement-5f89f689-3850-4280-8001-4d76f47e1270",
+          "description": "Expenses of witnesses of fact",
+          "amount": 84,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-62004970-8dcd-4535-88da-58d04a83b378"
+        },
+        "disbursement-92064084-eb02-4505-adf7-00fb8467f515": {
+          "id": "disbursement-92064084-eb02-4505-adf7-00fb8467f515",
+          "description": "Counsels base fee for second day",
+          "amount": 650,
+          "vat": 113.75,
+          "counselId": "counsel-9dbee9c6-f3aa-4801-8ce7-e51cf64ae18f",
+          "hasCounselSuccessFee": true,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "chronologyStepId": "chronology-step-7fe7a4c4-0cc2-449d-8859-86bb4c35f1b4"
+        },
+        "disbursement-1cf1f41d-c7c1-42d5-839a-7093e381c8c2": {
+          "id": "disbursement-1cf1f41d-c7c1-42d5-839a-7093e381c8c2",
+          "description": "Paid travelling on 9th October 2000",
+          "amount": 22.96,
+          "vat": 4.02,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "partyId": "party-87915676-5753-417c-a768-8e7c0191d94e"
+        },
+        "disbursement-235ae599-991b-4f6c-b4dc-3782ef4553e5": {
+          "id": "disbursement-235ae599-991b-4f6c-b4dc-3782ef4553e5",
+          "description": "Dr IJs fee for report",
+          "amount": 350,
+          "vat": 0,
+          "counselId": "",
+          "hasCounselSuccessFee": false,
+          "overrideCounselSuccessFeeVatPercentage": false,
+          "counselSuccessFeeVatPercentageOverride": 0,
+          "travelAndWaiting": false,
+          "additionalLiability": false,
+          "cls": false,
+          "notes": "",
+          "partyId": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28"
+        }
+      }
+    },
+    "documentsItems": {
+      "ids": [
+        "disbursement-7faaae61-979b-474c-85f9-c7999b6e261f",
+        "disbursement-41d1a096-44aa-49e7-a90a-389ead8c6cf8",
+        "disbursement-ac4eb57f-a6a0-4218-8a2e-3e1473517ed9"
+      ],
+      "entities": {
+        "disbursement-7faaae61-979b-474c-85f9-c7999b6e261f": {
+          "id": "disbursement-7faaae61-979b-474c-85f9-c7999b6e261f",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "feeEarnerId": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "date": "2000-01-01",
+          "description": "Engaged with documents 1",
+          "time": "0:45",
+          "estimated": false,
+          "partClaimed": false,
+          "notOtherwiseClaimed": false,
+          "enhancementId": "enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b",
+          "notes": ""
+        },
+        "disbursement-41d1a096-44aa-49e7-a90a-389ead8c6cf8": {
+          "id": "disbursement-41d1a096-44aa-49e7-a90a-389ead8c6cf8",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "feeEarnerId": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "date": "2000-01-01",
+          "description": "Engaged with documents 2",
+          "time": "44:30",
+          "estimated": false,
+          "partClaimed": false,
+          "notOtherwiseClaimed": false,
+          "enhancementId": "",
+          "notes": ""
+        },
+        "disbursement-ac4eb57f-a6a0-4218-8a2e-3e1473517ed9": {
+          "id": "disbursement-ac4eb57f-a6a0-4218-8a2e-3e1473517ed9",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "feeEarnerId": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "date": "2000-01-01",
+          "description": "Engaged with documents 3",
+          "time": "12:00",
+          "estimated": false,
+          "partClaimed": false,
+          "notOtherwiseClaimed": false,
+          "enhancementId": "",
+          "notes": ""
+        }
+      }
+    },
+    "enhancements": {
+      "ids": ["enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b"],
+      "entities": {
+        "enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b": {
+          "id": "enhancement-9de940a3-68f4-4cd3-9a8c-de2be6d1943b",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "***",
+          "percentage": 50
+        }
+      }
+    },
+    "feeEarners": {
+      "ids": [
+        "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+        "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+        "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4"
+      ],
+      "entities": {
+        "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675": {
+          "id": "fee-earner-ed96e876-eafd-4cb3-8382-2c5ae443d675",
+          "reference": "Partner",
+          "rateGroupId": "rate-group-965bf864-4efa-4366-8992-38757acf77e7"
+        },
+        "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405": {
+          "id": "fee-earner-bf574e33-a129-4b63-be3c-8bb0df329405",
+          "reference": "EF",
+          "rateGroupId": "rate-group-53cfe317-366c-4d8c-8227-c2b1be5793ed"
+        },
+        "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4": {
+          "id": "fee-earner-e9694cd5-f7fd-4858-952e-3dd64ef656e4",
+          "reference": "T",
+          "rateGroupId": "rate-group-badd35ed-d156-4e65-9d16-5a71ea298aa1"
+        }
+      }
+    },
+    "narrative": {
+      "narrative": {
+        "narrative": "Amet fugiat exercitation ipsum nisi dolor sit sunt. Cillum veniam proident cupidatat ut irure non ex laborum irure culpa fugiat ut et amet. Amet ea tempor incididunt sint. Consectetur nostrud veniam ad consectetur eiusmod incididunt culpa qui occaecat.\nNon id aliquip ipsum laborum in officia excepteur. Consequat incididunt aute qui proident quis sunt. Adipisicing laborum anim qui eiusmod duis in elit esse qui dolore laborum et elit. Dolor eu sint ex tempor ad reprehenderit incididunt tempor ad cupidatat fugiat esse. Quis adipisicing cupidatat exercitation sunt esse eu qui et reprehenderit. Nulla eu ipsum ut esse labore cupidatat anim laboris.\nAliquip id eu excepteur cillum laborum cillum reprehenderit pariatur ullamco dolore id dolore voluptate. Culpa cupidatat magna minim pariatur velit commodo aliqua eu reprehenderit. Nisi tempor sit duis ex sit velit consequat fugiat id in voluptate consequat consectetur. Ex ipsum consequat voluptate elit ullamco sint dolore fugiat est veniam dolor est. Eu ullamco in tempor do nostrud in. Qui minim irure quis sunt occaecat irure consequat dolore cupidatat aute.\nSunt mollit velit dolor enim eiusmod aliquip officia nostrud enim non. Ullamco occaecat irure quis quis deserunt ex. Exercitation laborum proident ex eiusmod.\nOccaecat veniam deserunt consectetur eu aliqua duis tempor excepteur minim magna incididunt enim commodo nisi. Laboris tempor ipsum exercitation velit ad dolore eu. Anim ipsum et consequat nulla ipsum. Ipsum culpa eiusmod ea quis sunt esse exercitation."
+      }
+    },
+    "parties": {
+      "ids": [
+        "party-e3a5f918-0f22-41d8-aa58-8e1627683530",
+        "party-87915676-5753-417c-a768-8e7c0191d94e",
+        "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28",
+        "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1",
+        "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9",
+        "party-0bc37c28-baae-472d-a2ea-c587bab824e4",
+        "party-3afea552-7824-416d-9c03-377fa50720e7"
+      ],
+      "entities": {
+        "party-e3a5f918-0f22-41d8-aa58-8e1627683530": {
+          "id": "party-e3a5f918-0f22-41d8-aa58-8e1627683530",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Claimant"
+        },
+        "party-87915676-5753-417c-a768-8e7c0191d94e": {
+          "id": "party-87915676-5753-417c-a768-8e7c0191d94e",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Witness of Fact"
+        },
+        "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28": {
+          "id": "party-61e09f44-be4b-4d5c-a1bb-20923d0b5f28",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Medical expert (Dr IJ)"
+        },
+        "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1": {
+          "id": "party-03f3d8dd-a0b0-4fbc-bb16-d5bc6547f2c1",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Defendant and his solicitor"
+        },
+        "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9": {
+          "id": "party-1c21674c-f065-4be9-b543-a5fc7ab44ab9",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Communications with the court"
+        },
+        "party-0bc37c28-baae-472d-a2ea-c587bab824e4": {
+          "id": "party-0bc37c28-baae-472d-a2ea-c587bab824e4",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Communications with Counsel"
+        },
+        "party-3afea552-7824-416d-9c03-377fa50720e7": {
+          "id": "party-3afea552-7824-416d-9c03-377fa50720e7",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "Work done on negotiations"
+        }
+      }
+    },
+    "parts": {
+      "ids": ["part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469"],
+      "entities": {
+        "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469": {
+          "id": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "description": "Costs of E F & Co",
+          "hasVat": true,
+          "vatPercentage": 17.5,
+          "hasSuccessFee": true,
+          "successFeePercentage": 40,
+          "hasCareAndConduct": true,
+          "careAndConductPercentage": 50,
+          "applyCareAndConductToTravelAndWaiting": false
+        }
+      }
+    },
+    "rateGroups": {
+      "ids": [
+        "rate-group-965bf864-4efa-4366-8992-38757acf77e7",
+        "rate-group-53cfe317-366c-4d8c-8227-c2b1be5793ed",
+        "rate-group-badd35ed-d156-4e65-9d16-5a71ea298aa1"
+      ],
+      "entities": {
+        "rate-group-965bf864-4efa-4366-8992-38757acf77e7": {
+          "id": "rate-group-965bf864-4efa-4366-8992-38757acf77e7",
+          "reference": "Partner",
+          "name": "Partner",
+          "cls": false
+        },
+        "rate-group-53cfe317-366c-4d8c-8227-c2b1be5793ed": {
+          "id": "rate-group-53cfe317-366c-4d8c-8227-c2b1be5793ed",
+          "reference": "EF",
+          "name": "EF",
+          "cls": false
+        },
+        "rate-group-badd35ed-d156-4e65-9d16-5a71ea298aa1": {
+          "id": "rate-group-badd35ed-d156-4e65-9d16-5a71ea298aa1",
+          "reference": "T",
+          "name": "T",
+          "cls": false
+        }
+      }
+    },
+    "rates": {
+      "ids": [
+        "rate-f7dc1741-5652-4ac9-85b1-c8c9e889baef",
+        "rate-26591d47-7fdc-4a5c-abf5-ad9d9979b2c3",
+        "rate-583e196c-5b11-43c7-9ef2-70b2ecc89447"
+      ],
+      "entities": {
+        "rate-f7dc1741-5652-4ac9-85b1-c8c9e889baef": {
+          "id": "rate-f7dc1741-5652-4ac9-85b1-c8c9e889baef",
+          "rateGroupId": "rate-group-965bf864-4efa-4366-8992-38757acf77e7",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "hourly": 180,
+          "calls": 18,
+          "lettersIn": 9,
+          "lettersOut": 18,
+          "advocacy": 180,
+          "counsel": 180,
+          "travelAndWaiting": 180
+        },
+        "rate-26591d47-7fdc-4a5c-abf5-ad9d9979b2c3": {
+          "id": "rate-26591d47-7fdc-4a5c-abf5-ad9d9979b2c3",
+          "rateGroupId": "rate-group-53cfe317-366c-4d8c-8227-c2b1be5793ed",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "hourly": 140,
+          "calls": 14,
+          "lettersIn": 7,
+          "lettersOut": 14,
+          "advocacy": 140,
+          "counsel": 140,
+          "travelAndWaiting": 140
+        },
+        "rate-583e196c-5b11-43c7-9ef2-70b2ecc89447": {
+          "id": "rate-583e196c-5b11-43c7-9ef2-70b2ecc89447",
+          "rateGroupId": "rate-group-badd35ed-d156-4e65-9d16-5a71ea298aa1",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "hourly": 85,
+          "calls": 8.5,
+          "lettersIn": 4.25,
+          "lettersOut": 8.5,
+          "advocacy": 85,
+          "counsel": 85,
+          "travelAndWaiting": 85
+        }
+      }
+    },
+    "solicitors": {
+      "ids": ["solicitor-b40826a5-c23b-4bc8-86da-d80a462be81a"],
+      "entities": {
+        "solicitor-b40826a5-c23b-4bc8-86da-d80a462be81a": {
+          "id": "solicitor-b40826a5-c23b-4bc8-86da-d80a462be81a",
+          "partId": "part-8b368ed5-5a2a-40ca-bd8d-7b844ea3a469",
+          "name": "E F & Co",
+          "address1": "1 Brighton Street",
+          "address2": "Some district",
+          "town": "Brighton",
+          "county": "Brighton and Hove",
+          "postCode": "BT1 2JH",
+          "telephone": "01234 567890",
+          "fax": "01234 567899",
+          "dx": "BT123",
+          "vatNumber": "33 4404 90"
+        }
+      }
+    },
+    "successFees": {
+      "ids": ["success-fee-c7482d23-e4f1-42d3-b7a5-3d134e183c40"],
+      "entities": {
+        "success-fee-c7482d23-e4f1-42d3-b7a5-3d134e183c40": {
+          "id": "success-fee-c7482d23-e4f1-42d3-b7a5-3d134e183c40",
+          "chronologyStepId": "chronology-step-ced2af89-99a1-4e02-824a-a74918fca177",
+          "description": "Success fee on solicitor's base fee on interim orders which were summarily assessed",
+          "baseCosts": 400
+        }
+      }
+    }
+  }
+}

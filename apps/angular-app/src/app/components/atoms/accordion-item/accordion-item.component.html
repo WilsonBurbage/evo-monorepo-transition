@@ -1,0 +1,26 @@
+<div
+  class="title-bar"
+  (click)="onTitleBarClicked()"
+>
+  <div class="split split--vertically-centered">
+    <div class="split__item">
+      <div class="title">{{ title }}</div>
+    </div>
+    <div class="split__item split__item--shrink">
+      <div class="toggle">
+        <app-icon
+          [icon]="enums.FontAwesomeIcon.remove"
+          [size]="enums.FontAwesomeSize.one"
+        ></app-icon>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="open"
+  @slideVerticalAnimation
+  class="content container"
+>
+  <ng-content></ng-content>
+</div>

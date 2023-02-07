@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.enhancements
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="enhancements"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.enhancements"
+      (rowDoubleClicked)="onEditEnhancementClicked($event)"
+      (rowDeleteClicked)="onDeleteEnhancementClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewEnhancementClicked()">
+        Add a enhancement
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

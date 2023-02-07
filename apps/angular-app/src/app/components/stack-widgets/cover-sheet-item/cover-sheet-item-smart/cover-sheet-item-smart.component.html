@@ -1,0 +1,5 @@
+<app-cover-sheet-item-dumb
+  [coverSheetItem]="(coverSheetItem$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-cover-sheet-item-dumb>

@@ -1,0 +1,6 @@
+<app-solicitor-dumb
+  [solicitor]="(solicitor$ | async)!"
+  (search)="onSearchClicked()"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-solicitor-dumb>

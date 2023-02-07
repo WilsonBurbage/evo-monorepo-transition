@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.attendances
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="attendances"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.attendances"
+      (rowDoubleClicked)="onEditAttendanceClicked($event)"
+      (rowDeleteClicked)="onDeleteAttendanceClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewAttendanceClicked()">
+        Add a attendance
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

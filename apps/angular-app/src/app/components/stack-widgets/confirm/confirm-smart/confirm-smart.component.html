@@ -1,0 +1,5 @@
+<app-confirm-dumb
+  [confirmMessage]="config.confirmMessage || ''"
+  (confirmed)="onConfirmClicked()"
+  (cancelled)="onCancelClicked()"
+></app-confirm-dumb>

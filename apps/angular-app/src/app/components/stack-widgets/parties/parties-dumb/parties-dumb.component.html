@@ -1,0 +1,34 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.parties
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="parties"
+      [redrawVariables]="[
+        attendances,
+        disbursements,
+        correspondenceCounters,
+        activePartId(),
+        activeFeeEarnerId()
+      ]"
+      [sortable]="true"
+      [sortEntityChunkName]="enums.EntityChunkName.parties"
+      (rowKeyPressed)="onRowKeyPressed($event)"
+      (cellDoubleClicked)="onEditPartyClicked($event)"
+      (rowDeleteClicked)="onDeletePartyClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewPartyClicked()">Add a party</app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

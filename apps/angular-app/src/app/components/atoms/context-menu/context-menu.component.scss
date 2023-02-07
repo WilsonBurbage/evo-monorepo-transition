@@ -1,0 +1,21 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+
+  position: absolute;
+  z-index: 99999999999;
+  width: 200px;
+
+  overflow: hidden;
+  border-radius: var(--border-radius-size);
+
+  @include shadow--deep;
+
+  .item {
+    padding: var(--box-size-2);
+    background-color: var(--grey-1);
+
+    border-top: 1px dashed var(--grey-2);
+  }
+}

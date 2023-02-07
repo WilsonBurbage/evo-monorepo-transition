@@ -1,0 +1,28 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.solicitorLookup
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-form
+      submitText="Search"
+      [schema]="solicitorLookupSchema"
+      [submitting]="searching"
+      (formGroupGenerated)="onFormGroupGenerated($event)"
+      (submitClicked)="onSearchClicked()"
+    ></app-form>
+  </div>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="solicitors"
+      [short]="true"
+      (rowDoubleClicked)="onSelectSolicitorClicked($event)"
+    ></app-table-smart>
+  </div>
+</app-stack-widget-wrapper-smart>

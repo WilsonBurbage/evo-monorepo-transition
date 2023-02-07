@@ -1,0 +1,38 @@
+<app-stack-widget-wrapper-smart [closeable]="false">
+  <div class="split">
+    <div class="split__item">
+      <app-content-box
+        boxTitle="Bill"
+        [inset]="true"
+      >
+        <app-button-set [stretchContents]="true">
+          <app-button (clicked)="onBillSetupClicked()">Bill setup</app-button>
+          <app-button (clicked)="onCoverSheetsClicked()">
+            Cover sheets
+          </app-button>
+          <app-button (clicked)="onNarrativeClicked()">Narrative</app-button>
+          <app-button (clicked)="onRatesClicked()">Rates</app-button>
+          <app-button (clicked)="onPartsClicked()">Parts</app-button>
+          <app-button (clicked)="onCounselsClicked()">Counsels</app-button>
+        </app-button-set>
+      </app-content-box>
+    </div>
+
+    <div class="split__item">
+      <app-content-box
+        boxTitle="Part"
+        [inset]="true"
+      >
+        <app-button-set [stretchContents]="true">
+          <app-button (clicked)="onChronologyClicked()">Chronology</app-button>
+          <app-button (clicked)="onPartiesClicked()">Parties</app-button>
+          <app-button (clicked)="onDocumentsClicked()">Documents</app-button>
+          <app-button (clicked)="onOtherDisbursementsClicked()">
+            Other dibs
+          </app-button>
+          <app-button (clicked)="onOtherWorkClicked()">Other work</app-button>
+        </app-button-set>
+      </app-content-box>
+    </div>
+  </div>
+</app-stack-widget-wrapper-smart>

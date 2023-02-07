@@ -1,0 +1,16 @@
+<div trapFocus>
+  <ng-content></ng-content>
+
+  <ng-container *ngIf="closeable">
+    <div class="close">
+      <app-button
+        [icon]="enums.FontAwesomeIcon.close"
+        [size]="enums.FontAwesomeSize.one"
+        [tertiary]="true"
+        (clicked)="onCancelClicked()"
+      >
+        Close
+      </app-button>
+    </div>
+  </ng-container>
+</div>

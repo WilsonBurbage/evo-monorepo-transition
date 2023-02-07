@@ -1,0 +1,7 @@
+<app-solicitor-lookup-dumb
+  [solicitors]="(solicitors$ | async)!"
+  [searching]="(searching$ | async)!"
+  (search)="onSearchClicked($event)"
+  (selectSolicitorClicked)="onSelectSolicitorClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-solicitor-lookup-dumb>

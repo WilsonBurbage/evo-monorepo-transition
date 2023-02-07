@@ -1,0 +1,10 @@
+@import 'mixins/box';
+@import 'mixins/inputs';
+
+:host {
+  @include component-reset;
+
+  input {
+    @include input-reset;
+  }
+}

@@ -1,0 +1,34 @@
+@import 'mixins/box';
+
+:host {
+  @include component-reset;
+  @include panel-reset;
+
+  display: none;
+
+  background-color: var(--highlight-1);
+  color: var(--offset-for-highlight-1);
+
+  &.visible {
+    display: block;
+  }
+
+  &.positive {
+    background-color: var(--positive);
+    color: var(--offset-for-positive);
+  }
+
+  &.neutral {
+    background-color: var(--neutral);
+    color: var(--offset-for-neutral);
+  }
+
+  &.negative {
+    background-color: var(--negative);
+    color: var(--offset-for-negative);
+  }
+
+  .progress {
+    margin-top: var(--box-size-1);
+  }
+}

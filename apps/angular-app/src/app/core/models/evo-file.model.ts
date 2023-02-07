@@ -1,0 +1,42 @@
+import { Attendance } from './attendance.model';
+import { BillSetup } from './bill-setup.model';
+import { CaseParty } from './case-party.model';
+import { ChronologyStep } from './chronology-step.model';
+import { CorrespondenceCounter } from './correspondence-counter.model';
+import { Counsel } from './counsel.model';
+import { CoverSheetDetails } from './cover-sheet-details.model';
+import { CoverSheetItem } from './cover-sheet-item.model';
+import { Disbursement } from './disbursement.model';
+import { DocumentsItem } from './documents-item.model';
+import { Enhancement } from './enhancement.model';
+import { FeeEarner } from './fee-earner.model';
+import { Narrative } from './narrative.model';
+import { Part } from './part.model';
+import { Party } from './party.model';
+import { RateGroup } from './rate-group.model';
+import { Rate } from './rate.model';
+import { Solicitor } from './solicitor.model';
+import { SuccessFee } from './success-fee.model';
+
+export interface EvoFile {
+  attendances: Attendance[];
+  billSetup: BillSetup;
+  caseParties: CaseParty[];
+  chronologySteps: ChronologyStep[];
+  correspondenceCounters: CorrespondenceCounter[];
+  counsels: Counsel[];
+  coverSheetDetails: CoverSheetDetails;
+  coverSheetItems: CoverSheetItem[];
+  disbursements: Disbursement[];
+  documentsItems: DocumentsItem[];
+  enhancements: Enhancement[];
+  feeEarners: FeeEarner[];
+  narrative: Narrative;
+  parties: Party[];
+  parts: Part[];
+  rateGroups: RateGroup[];
+  rates: Rate[];
+  solicitors: Solicitor[];
+  successFees: SuccessFee[];
+  version: string;
+}

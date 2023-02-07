@@ -1,0 +1,116 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.coverSheets
+      ]
+    }}
+  </h2>
+
+  <div class="container split">
+    <div class="split__item">
+      <div class="split split--bottom-aligned">
+        <div class="split__item">
+          <ng-container *ngIf="coverSheetDetails">
+            <div class="container">
+              <app-labelled-text label="Court">
+                {{ coverSheetDetails.court }}
+              </app-labelled-text>
+              <app-labelled-text label="Claim number">
+                {{ coverSheetDetails.claimNumber }}
+              </app-labelled-text>
+            </div>
+          </ng-container>
+        </div>
+        <div class="split__item split__item--shrink">
+          <app-button-set>
+            <app-button (clicked)="onEditCoverSheetDetailsClicked()">
+              Edit cover sheet details
+            </app-button>
+          </app-button-set>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-accordion class="container">
+    <app-accordion-item title="Case parties">
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="casePartiesTableConfig"
+          [tableItems]="caseParties"
+          [short]="true"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.caseParties"
+          (rowDoubleClicked)="onEditCasePartyClicked($event)"
+          (rowDeleteClicked)="onDeleteCasePartyClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewCasePartyClicked()">
+            Add a case party
+          </app-button>
+        </app-button-set>
+      </div>
+    </app-accordion-item>
+
+    <app-accordion-item title="Front sheet items">
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="coverSheetItemsTableConfig"
+          [tableItems]="frontSheetItems"
+          [redrawVariables]="[
+            coverSheetDetails,
+            caseParties,
+            readoutForCaseParties,
+            readoutForNarrative,
+            readoutForRatesApplied,
+            readoutForSolicitorDetails,
+            readoutForVatDetails
+          ]"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.coverSheetItems"
+          (rowDoubleClicked)="onEditCoverSheetItemClicked($event)"
+          (rowDeleteClicked)="onDeleteCoverSheetItemClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewFrontSheetItemClicked()">
+            Add a front sheet item
+          </app-button>
+        </app-button-set>
+      </div>
+    </app-accordion-item>
+
+    <app-accordion-item title="Back sheet items">
+      <div class="container">
+        <app-table-smart
+          [tableConfig]="coverSheetItemsTableConfig"
+          [tableItems]="backSheetItems"
+          [redrawVariables]="[
+            coverSheetDetails,
+            caseParties,
+            readoutForCaseParties,
+            readoutForNarrative,
+            readoutForRatesApplied,
+            readoutForSolicitorDetails,
+            readoutForVatDetails
+          ]"
+          [sortable]="true"
+          [sortEntityChunkName]="enums.EntityChunkName.coverSheetItems"
+          (rowDoubleClicked)="onEditCoverSheetItemClicked($event)"
+          (rowDeleteClicked)="onDeleteCoverSheetItemClicked($event)"
+        ></app-table-smart>
+      </div>
+      <div class="container">
+        <app-button-set>
+          <app-button (clicked)="onNewBackSheetItemClicked()">
+            Add a back sheet item
+          </app-button>
+        </app-button-set>
+      </div>
+    </app-accordion-item>
+  </app-accordion>
+</app-stack-widget-wrapper-smart>

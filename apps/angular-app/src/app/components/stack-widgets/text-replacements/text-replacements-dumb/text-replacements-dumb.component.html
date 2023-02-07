@@ -1,0 +1,26 @@
+<app-stack-widget-wrapper-smart>
+  <h2>
+    {{
+      constants.STACK_WIDGET_REFERENCE_NAME_MAP[
+        enums.StackWidgetReference.textReplacements
+      ]
+    }}
+  </h2>
+
+  <div class="container">
+    <app-table-smart
+      [tableConfig]="tableConfig"
+      [tableItems]="textReplacements"
+      (rowDoubleClicked)="onEditTextReplacementClicked($event)"
+      (rowDeleteClicked)="onDeleteTextReplacementClicked($event)"
+    ></app-table-smart>
+  </div>
+
+  <div class="container">
+    <app-button-set>
+      <app-button (clicked)="onNewTextReplacementClicked()">
+        Add a text replacement
+      </app-button>
+    </app-button-set>
+  </div>
+</app-stack-widget-wrapper-smart>

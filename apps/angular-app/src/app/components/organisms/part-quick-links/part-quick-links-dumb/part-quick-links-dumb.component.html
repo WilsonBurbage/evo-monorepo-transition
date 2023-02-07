@@ -1,0 +1,17 @@
+<app-button-set>
+  <ng-container
+    *ngFor="
+      let stackWidgetReference of this
+        | function : requiredPartQuickLinkStackWidgetReferences : stackWidgets
+    "
+  >
+    <app-button
+      @slideHorizontalAnimation
+      [halfHeight]="true"
+      [secondary]="true"
+      (clicked)="onQuickLinkClicked(stackWidgetReference)"
+    >
+      {{ constants.STACK_WIDGET_REFERENCE_NAME_MAP[stackWidgetReference] }}
+    </app-button>
+  </ng-container>
+</app-button-set>

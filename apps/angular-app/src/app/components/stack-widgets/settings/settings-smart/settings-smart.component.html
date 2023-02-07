@@ -1,0 +1,9 @@
+<app-settings-dumb
+  [accountDetailsWaitingForResponse]="
+    (accountDetailsWaitingForResponse$ | async)!
+  "
+  [accountDetailsError]="(accountDetailsError$ | async)!"
+  [account]="(account$ | async)!"
+  [organisation]="(organisation$ | async)!"
+  (textReplacementsClicked)="onTextReplacementsClicked()"
+></app-settings-dumb>

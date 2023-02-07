@@ -1,0 +1,9 @@
+<app-preview-dumb
+  [activePreviewExportDocumentType]="
+    (activePreviewExportDocumentType$ | async)!
+  "
+  [columns]="(columns$ | async)!"
+  [rows]="(rows$ | async)!"
+  [jumpToLinks]="(jumpToLinks$ | async)!"
+  (exportRowDoubleClicked)="onExportRowDoubleClicked($event)"
+></app-preview-dumb>

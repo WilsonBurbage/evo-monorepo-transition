@@ -1,0 +1,5 @@
+<app-text-replacement-dumb
+  [textReplacement]="(textReplacement$ | async)!"
+  (saved)="onSaveClicked($event)"
+  (cancelled)="onCancelClicked()"
+></app-text-replacement-dumb>
