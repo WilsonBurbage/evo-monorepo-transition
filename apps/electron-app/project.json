@@ -14,9 +14,9 @@
       }
     },
     "serve": {
-      "executor": "nx:run-script",
+      "executor": "nx:run-commands",
       "options": {
-        "script": "serve-electron-app"
+        "command": "nx build electron-app && electron ./dist/apps/electron-app"
       },
       "configurations": {
         "production": {

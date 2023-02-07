@@ -2,9 +2,7 @@
   "name": "evo-monorepo",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {
-    "serve-electron-app": "electron ./dist/apps/electron-app"
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",
