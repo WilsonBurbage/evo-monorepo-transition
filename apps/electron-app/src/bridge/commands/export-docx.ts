@@ -16,8 +16,10 @@ export const exportDocx = (
 ): boolean => {
   const filePathToUse = path.join(targetFolderPath, `${targetFileName}.docx`);
 
+  console.log(path.resolve('./'));
+
   const content = fs.readFileSync(
-    `../angular-app/dist/assets/word-templates/${templateName}.docx`,
+    `./apps/electron-app/src/assets/word-templates/${templateName}.docx`,
     'binary'
   );
 
